@@ -1,0 +1,13 @@
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\bin\x64\Release 64bit\NazgulMonitor.exe.config
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\bin\x64\Release 64bit\NazgulMonitor.exe
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\bin\x64\Release 64bit\NazgulMonitor.pdb
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\bin\x64\Release 64bit\NazgulMonitor.xml
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\bin\x64\Release 64bit\OpenHardwareMonitorLib.dll
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.Form1.resources
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.Resources.resources
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.vbproj.GenerateResource.cache
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.vbproj.CoreCompileInputs.cache
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.vbproj.CopyComplete
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.exe
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.xml
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x64\Release 64bit\NazgulMonitor.pdb
