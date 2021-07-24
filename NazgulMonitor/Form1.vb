@@ -4,9 +4,7 @@ Imports System.Threading.Tasks
 
 Imports System
 Imports System.Collections.Generic
-Imports System.Linq
 Imports System.Text
-Imports OpenHardwareMonitor.Hardware
 Imports System.Net
 Imports System.Threading
 Imports System.Text.RegularExpressions
@@ -16,36 +14,24 @@ Imports System.Net.Http
 
 Public Class Form1
     Dim iAutoRun As Integer = 0
+    Public Class GlobalVariables
+        Public Shared PingResult As String = "Ping: "
+        Public Shared CPUusage As String = "CPU: "
+        Public Shared download As String = "Download: "
+        Public Shared upload As String = "Upload: "
+        Public Shared CPUTemp As String = "CPU: "
+        Public Shared GPUTemp As String = "GPU: "
+    End Class
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
-        'System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False    'removes all issues with cross thread operations
+        'System.Windows.Forms.Control.CheckForIllegalCrossThreadCalls = False       'removes all issues with cross thread operations
 
-        Timer1.Start()                                                          'timer for current time used in the loggin api as well
-        'Timer2.Stop()
-        loadConfig()                                                            'loads configs from config.ini
+        Timer1.Start()                                                              'timer for current time used in the loggin api as well
+        loadConfig()                                                                'loads configs from config.ini
         checkIfAutorun()
 
-
-        Dim WindowsVersion As String = My.Computer.Info.OSFullName              'get windows version
-        WindowsVersion = WindowsVersion.Replace("Microsoft ", "")               'removes Microsoft from FULL OS NAME
-        Label2.Text = WindowsVersion
-
-
-        Dim _IP As String = Nothing
-        Dim _IPHostEntry As System.Net.IPHostEntry = System.Net.Dns.GetHostEntry(System.Net.Dns.GetHostName())
-        For Each _IPAddress As System.Net.IPAddress In _IPHostEntry.AddressList
-            If _IPAddress.AddressFamily.ToString() = "InterNetwork" Then
-                _IP = _IPAddress.ToString()
-            End If
-        Next _IPAddress
-        Label6.Text = "Int IP: " & _IP                                          'get local ip
-
-
-        'setting max values for logs
-        Label11.Text = "CPU Temp. " & TrackBar1.Value & " °C"
-        Label15.Text = "GPU Temp. " & TrackBar1.Value & " °C"
-        Label12.Text = "CPU Usage " & TrackBar1.Value & "%"
-        Label13.Text = "RAM Usage " & TrackBar1.Value & "%"
+        Label2.Text = getWindowsVersion()
+        Label6.Text = "Int IP: " & getInternalIP()
     End Sub
     Private Sub removeNotifyIcon()
         If Not Me.NotifyIcon1 Is Nothing Then
@@ -130,18 +116,20 @@ Public Class Form1
 
         Try
             getCPU()
+            Label3.Text = GlobalVariables.CPUusage
         Catch
             getLog("Failed to get CPU usage")
         End Try
 
         If ThirteenCheckBox2.Checked = True Then
-            getPing() ' try is already inside
+            getPing()
+            Label4.Text = GlobalVariables.PingResult
         Else
             Label4.Text = "Ping: Disabled"
         End If
 
         Try
-            getRAM()
+            Label5.Text = getRAM()
         Catch
             getLog("Failed to get RAM usage")
         End Try
@@ -149,6 +137,8 @@ Public Class Form1
         If ThirteenCheckBox2.Checked = True Then
             Try
                 getNetwork()
+                Label7.Text = GlobalVariables.upload
+                Label8.Text = GlobalVariables.download
             Catch
                 getLog("Failed to get Network usage")
             End Try
@@ -160,6 +150,7 @@ Public Class Form1
         If ThirteenCheckBox1.Checked = True Then
             Try
                 getCPUTemp()
+                Label9.Text = GlobalVariables.CPUTemp
             Catch ex As Exception
                 getLog("Failed to get CPU Temperature")
                 getLog(ex.ToString)
@@ -171,6 +162,7 @@ Public Class Form1
         If ThirteenCheckBox5.Checked = True Then
             Try
                 getGPUTemp()
+                Label14.Text = GlobalVariables.GPUTemp
             Catch ex As Exception
                 getLog("Failed to get GPU Temperature")
                 getLog(ex.ToString)
@@ -264,59 +256,7 @@ Public Class Form1
         'Await Task.Delay(5000)
         'wc.Stop()
     End Function
-    Private Sub getGPUTemp()
-        'GPU TEMP
-        Dim cp As New Computer()
-        cp.Open()
-        cp.GPUEnabled = True
 
-        'Dim Info As String = ""
-        For i As Integer = 0 To cp.Hardware.Length - 1
-            Dim hw = cp.Hardware(i)
-
-            Select Case hw.HardwareType
-
-                Case HardwareType.GpuNvidia
-                    For j = 0 To hw.Sensors.Length - 1
-                        Dim sensor = hw.Sensors(j)
-                        If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
-                            Label14.Text = "GPU: " & sensor.Value & " Celsius"
-                        End If
-                    Next
-                Case HardwareType.GpuAti
-                    For j = 0 To hw.Sensors.Length - 1
-                        Dim sensor = hw.Sensors(j)
-                        If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
-                            Label14.Text = "GPU: " & sensor.Value & " Celsius"
-                        End If
-                    Next
-            End Select
-        Next
-        'cp.Close()
-    End Sub
-    Private Sub getCPUTemp()
-        'CPU TEMP
-        Dim cp As New Computer()
-        cp.Open()
-        cp.CPUEnabled = True
-
-        'Dim Info As String = ""
-        For i As Integer = 0 To cp.Hardware.Length - 1
-            Dim hw = cp.Hardware(i)
-
-            Select Case hw.HardwareType
-
-                Case HardwareType.CPU
-                    For j = 0 To hw.Sensors.Length - 1
-                        Dim sensor = hw.Sensors(j)
-                        If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
-                            Label9.Text = "CPU: " & sensor.Value & " Celsius"
-                        End If
-                    Next
-            End Select
-        Next
-        'cp.Close()
-    End Sub
     'Private Sub getCPUTemp2()
     '    Dim cp As New Computer()
     '    cp.Open()
@@ -358,111 +298,6 @@ Public Class Form1
     '        End Select
     '    Next
     'End Sub
-    Private Async Sub getNetwork()
-        'NETWORK
-        Dim backupNetwork As String
-        Dim strArrNetwork() As String
-        Dim networkInterfaces As New System.Diagnostics.PerformanceCounterCategory("Network Interface")
-        Dim nics As String() = networkInterfaces.GetInstanceNames()
-        Dim bytesSent(nics.Length - 1) As System.Diagnostics.PerformanceCounter
-        Dim bytesReceived(nics.Length - 1) As System.Diagnostics.PerformanceCounter
-        Try 'idk why but program was crashing when switching network or having very very laggy connection
-
-            'Dim i As Integer
-            For i = 0 To nics.Length - 1
-                bytesSent(i) = New System.Diagnostics.PerformanceCounter("Network Interface", "Bytes Sent/sec", nics(i), True)
-                bytesReceived(i) = New System.Diagnostics.PerformanceCounter("Network Interface", "Bytes received/sec", nics(i), True)
-            Next
-
-            For i = 0 To nics.Length - 1
-                backupNetwork = (String.Format("{1};{2}", i, bytesSent(i).NextValue, bytesReceived(i).NextValue))
-                Await Task.Delay(1000)
-                backupNetwork = (String.Format("{1};{2}", i, bytesSent(i).NextValue, bytesReceived(i).NextValue))
-
-                If backupNetwork.Contains("0;") Or backupNetwork.Contains(";0") Then
-                Else
-                    strArrNetwork = backupNetwork.Split(";")
-                    Label7.Text = "Upload: " & BytesConverter(CLng(strArrNetwork(0)))
-                    Label8.Text = "Download: " & BytesConverter(CLng(strArrNetwork(1)))
-                End If
-                'Label7.Text = (String.Format("{1} Bytes/s sent, {2} Bytes/s received", i, bytesSent(i).NextValue, bytesReceived(i).NextValue))
-                'Await Task.Delay(1000)
-                'Label7.Text = (String.Format("{1} Bytes/s sent, {2} Bytes/s received", i, bytesSent(i).NextValue, bytesReceived(i).NextValue))
-            Next
-        Catch
-            getLog("Error while retrieving Network Stats")
-        End Try
-
-
-    End Sub
-    Private Async Sub getCPU()
-        'CPU
-        Dim backupcpu As String
-        Dim cpuUsage As PerformanceCounter
-        cpuUsage = New PerformanceCounter("Processor", "% Processor Time", "_Total")
-        backupcpu = "CPU: " & Int(cpuUsage.NextValue()) & "% used"
-        Await Task.Delay(1000)
-        'System.Threading.Thread.Sleep(1000)
-        backupcpu = "CPU: " & Int(cpuUsage.NextValue()) & "% used"
-
-
-        If backupcpu.Contains("0%") Then
-        Else
-            Label3.Text = backupcpu 'cpuusage is somehow too fast for the logs
-        End If
-    End Sub
-    Private Sub getRAM()
-        'RAM
-        Dim RamUsage As String
-        RamUsage = (100 - (My.Computer.Info.AvailablePhysicalMemory / My.Computer.Info.TotalPhysicalMemory * 100)).ToString("f")
-        Label5.Text = "RAM: " & Int(RamUsage) & "% used"
-    End Sub
-    Private Async Sub getPing()
-        'PING
-        Dim Result As Net.NetworkInformation.PingReply
-        Dim SendPing As New Net.NetworkInformation.Ping
-        Dim ResponseTime As Long
-        'Dim thread As New Thread(
-        'Sub()
-
-        Try
-            Result = SendPing.Send("www.google.com")
-            ResponseTime = Result.RoundtripTime
-            If Result.Status = Net.NetworkInformation.IPStatus.Success Then
-                Label4.Text = "Ping: " & ResponseTime.ToString & "ms"
-            Else
-                Label4.Text = "Ping: Failed to Ping"
-            End If
-        Catch
-            getLog("Internet is not available")
-        End Try
-        'End Sub)
-        'thread.Start()
-        Await Task.Delay(1000)
-    End Sub
-    Public Function BytesConverter(ByVal bytes As Long) As String
-        Dim KB As Long = 1024
-        Dim MB As Long = KB * KB
-        Dim GB As Long = KB * KB * KB
-        Dim TB As Long = KB * KB * KB * KB
-        Dim returnVal As String = "0 Bytes"
-
-        Select Case bytes
-            Case Is <= KB
-                returnVal = bytes & " Bytes"
-            Case Is > TB
-                returnVal = (bytes / KB / KB / KB / KB).ToString("0.00") & " TB"
-            Case Is > GB
-                returnVal = (bytes / KB / KB / KB).ToString("0.00") & " GB"
-            Case Is > MB
-                returnVal = (bytes / KB / KB).ToString("0.00") & " MB"
-            Case Is > KB
-                returnVal = (bytes / KB).ToString("0.00") & " KB"
-        End Select
-
-        Return returnVal.ToString
-    End Function
-
     Private Async Sub getLog(ByVal log As String)
         If ThirteenTextBox1.Text = "" Then
             ThirteenTextBox1.Text = Label1.Text & " - " & log
@@ -486,11 +321,6 @@ Public Class Form1
         'SEND WARNING LOGS TO WEBSERVER
         If ThirteenCheckBox3.Checked = True Then
             Try
-                'Dim wc As New WebBrowser
-                'wc.Navigate(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
-                '        Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text & ";" & "Last Update: " & Label1.Text &
-                '    "&Log=" & Label1.Text & " - " & log)
-
                 Dim uri As New Uri(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
                    Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text & ";" & "Last Update: " & Label1.Text &
                    "&Log=" & Label1.Text & " - " & log)
@@ -499,7 +329,7 @@ Public Class Form1
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
                             If result IsNot Nothing Then
-                                'Console.WriteLine(result.ToString())
+                                Console.WriteLine(result.ToString())
                             End If
                         End Using
                     End Using
@@ -518,9 +348,6 @@ Public Class Form1
         ThirteenButton4.Enabled = True
         ThirteenButton6.Enabled = False
         saveConfig() 'saves configs into config.ini
-        'ThirteenCheckBox1.Enabled = False
-        'ThirteenCheckBox2.Enabled = False
-        'ThirteenCheckBox3.Enabled = False
     End Sub
     Private Sub ThirteenButton3_Click(sender As Object, e As EventArgs) Handles ThirteenButton3.Click
         StartButton()
@@ -531,19 +358,7 @@ Public Class Form1
         ThirteenButton3.Enabled = True
         ThirteenButton4.Enabled = False
         ThirteenButton6.Enabled = True
-        'ThirteenCheckBox1.Enabled = True
-        'ThirteenCheckBox2.Enabled = True
-        'ThirteenCheckBox3.Enabled = True
     End Sub
-    Private Sub InternetConnection()
-        Try
-            My.Computer.Network.Ping("www.google.com")
-        Catch
-            getLog("Internet is not available")
-        End Try
-        'Await Task.Delay(30000)
-    End Sub
-
     Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
         Label11.Text = "CPU Temp. " & TrackBar1.Value & " °C"
         Label15.Text = "GPU Temp. " & TrackBar1.Value & " °C"
@@ -552,30 +367,12 @@ Public Class Form1
     End Sub
 
     Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        ReleaseMemory() 'every 60sec it tries to free some ram
-    End Sub
-    Private Shared Function Num(ByVal value As String) As Integer
         Try
-            Dim number As Integer = (Integer.Parse(Regex.Replace(value, "[^\d]", "")))
-            Return number
-        Catch
-            Return 1 'in case is not able to parse the only integers it will return 1 to avoid useless logs or errors
-        End Try
-    End Function
-    Friend Sub ReleaseMemory()
-        Try
-            GC.Collect()
-            GC.WaitForPendingFinalizers()
-            If Environment.OSVersion.Platform = PlatformID.Win32NT Then
-                SetProcessWorkingSetSize(System.Diagnostics.Process.GetCurrentProcess().Handle, -1, -1)
-            End If
+            ReleaseMemory() 'every 60sec it tries to free some ram
         Catch
             getLog("Error while releasing memory")
-            'LogError(ex.ToString())
         End Try
     End Sub
-
-    Private Declare Function SetProcessWorkingSetSize Lib "kernel32.dll" (ByVal hProcess As IntPtr, ByVal dwMinimumWorkingSetSize As Int32, ByVal dwMaximumWorkingSetSize As Int32) As Int32
 
     Private Sub ThirteenButton5_Click(sender As Object, e As EventArgs) Handles ThirteenButton5.Click
         ThirteenTextBox1.Text = ""
@@ -714,6 +511,13 @@ Public Class Form1
             ThirteenCheckBox7.Checked = False
         End If
         NumericUpDown1.Value = strArr(9)
+
+
+        'setting max values for logs
+        Label11.Text = "CPU Temp. " & TrackBar1.Value & " °C"
+        Label15.Text = "GPU Temp. " & TrackBar1.Value & " °C"
+        Label12.Text = "CPU Usage " & TrackBar1.Value & "%"
+        Label13.Text = "RAM Usage " & TrackBar1.Value & "%"
     End Sub
 
     Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick

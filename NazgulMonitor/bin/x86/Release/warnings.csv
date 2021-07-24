@@ -4898,3 +4898,324 @@
 22 Jul 2021 - 13:02:01;CPU Usage 97%
 22 Jul 2021 - 20:04:54;CPU Usage 89%
 22 Jul 2021 - 20:04:54;CPU Usage 89%
+24 Jul 2021 - 15:41:48;Can't send logs to webserver
+24 Jul 2021 - 15:41:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:48;Can't send logs to webserver
+24 Jul 2021 - 15:41:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:49;Can't send logs to webserver
+24 Jul 2021 - 15:41:49;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:49;Can't send logs to webserver
+24 Jul 2021 - 15:41:49;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:49;Can't send logs to webserver
+24 Jul 2021 - 15:41:49;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:49;Can't send logs to webserver
+24 Jul 2021 - 15:41:49;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:50;Can't send logs to webserver
+24 Jul 2021 - 15:41:50;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:51;Can't send logs to webserver
+24 Jul 2021 - 15:41:51;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:52;Can't send logs to webserver
+24 Jul 2021 - 15:41:52;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:53;Can't send logs to webserver
+24 Jul 2021 - 15:41:53;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:54;Can't send logs to webserver
+24 Jul 2021 - 15:41:54;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:55;Can't send logs to webserver
+24 Jul 2021 - 15:41:55;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:56;Can't send logs to webserver
+24 Jul 2021 - 15:41:56;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:57;Can't send logs to webserver
+24 Jul 2021 - 15:41:57;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:58;Can't send logs to webserver
+24 Jul 2021 - 15:41:58;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:41:59;Can't send logs to webserver
+24 Jul 2021 - 15:41:59;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:42:00;Can't send logs to webserver
+24 Jul 2021 - 15:42:00;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:42:01;Can't send logs to webserver
+24 Jul 2021 - 15:42:01;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:42:02;Can't send logs to webserver
+24 Jul 2021 - 15:42:02;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The underlying connection was closed: Could not establish trust relationship for the SSL/TLS secure channel. ---> System.Security.Authentication.AuthenticationException: The remote certificate is invalid according to the validation procedure.
+   at System.Net.TlsStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.PooledStream.EndWrite(IAsyncResult asyncResult)
+   at System.Net.ConnectStream.WriteHeadersCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_12_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 253
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_9_Timer2_Tick.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 183
+24 Jul 2021 - 15:58:03;CPU Usage 89%
+24 Jul 2021 - 15:58:04;CPU Usage 86%
+24 Jul 2021 - 15:58:04;RAM Usage 81%
+24 Jul 2021 - 15:58:05;CPU Usage 93%
+24 Jul 2021 - 15:58:05;RAM Usage 82%
+24 Jul 2021 - 15:58:06;RAM Usage 83%
+24 Jul 2021 - 15:58:07;RAM Usage 83%
+24 Jul 2021 - 21:54:03;RAM Usage 77%
+24 Jul 2021 - 21:54:04;RAM Usage 77%
+24 Jul 2021 - 21:54:05;RAM Usage 77%
+24 Jul 2021 - 21:54:06;RAM Usage 77%
+24 Jul 2021 - 21:54:07;RAM Usage 77%
+24 Jul 2021 - 21:54:08;RAM Usage 77%
+24 Jul 2021 - 21:54:09;RAM Usage 77%
+24 Jul 2021 - 21:54:10;RAM Usage 77%
+24 Jul 2021 - 21:54:11;RAM Usage 77%
+24 Jul 2021 - 21:54:12;RAM Usage 77%
