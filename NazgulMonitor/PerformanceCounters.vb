@@ -110,29 +110,17 @@ Module PerformanceCounters
         cp.Open()
         cp.GPUEnabled = True
 
-        'Dim Info As String = ""
-        For i As Integer = 0 To cp.Hardware.Length - 1
-            Dim hw = cp.Hardware(i)
+        Dim gpus = cp.Hardware.Where(Function(hw) hw.HardwareType = HardwareType.GpuNvidia Or hw.HardwareType = HardwareType.GpuAti).ToArray()
 
-            Select Case hw.HardwareType
-
-                Case HardwareType.GpuNvidia
-                    For j = 0 To hw.Sensors.Length - 1
-                        Dim sensor = hw.Sensors(j)
-                        If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
-                            Form1.GlobalVariables.GPUTemp = "GPU: " & sensor.Value & " Celsius"
-                        End If
-                    Next
-                Case HardwareType.GpuAti
-                    For j = 0 To hw.Sensors.Length - 1
-                        Dim sensor = hw.Sensors(j)
-                        If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
-                            Form1.GlobalVariables.GPUTemp = "GPU: " & sensor.Value & " Celsius"
-                        End If
-                    Next
-            End Select
+        For Each gpu In gpus
+            Dim sensors = gpu.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToArray()
+            For Each sensor In sensors
+                Form1.GlobalVariables.GPUTemp = "GPU: " & sensor.Value & " Celsius"
+            Next
         Next
+
         'cp.Close()
+
     End Sub
     Public Sub getCPUTemp()
         'CPU TEMP
