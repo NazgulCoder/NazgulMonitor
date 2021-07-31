@@ -14,6 +14,7 @@ Imports System.Net.Http
 
 Public Class Form1
     Dim iAutoRun As Integer = 0
+    Dim sendTelegramWarnings As Boolean = True
     Public Class GlobalVariables
         Public Shared PingResult As String = "Ping: "
         Public Shared CPUusage As String = "CPU: "
@@ -246,7 +247,7 @@ Public Class Form1
                 Using content As HttpContent = response.Content
                     Dim result As String = Await content.ReadAsStringAsync()
                     If result IsNot Nothing Then
-                        Console.WriteLine(result.ToString())
+                        'Console.WriteLine(result.ToString())
                     End If
                 End Using
             End Using
@@ -329,7 +330,7 @@ Public Class Form1
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
                             If result IsNot Nothing Then
-                                Console.WriteLine(result.ToString())
+                                'Console.WriteLine(result.ToString())
                             End If
                         End Using
                     End Using
@@ -339,6 +340,27 @@ Public Class Form1
                 ThirteenTextBox1.Text = Label1.Text & " - Could not communicate with the webserver" & Environment.NewLine & ThirteenTextBox1.Text
                 ThirteenTextBox1.Text = Label1.Text & " - " & ex.ToString & Environment.NewLine & ThirteenTextBox1.Text
             End Try
+        End If
+
+        If sendTelegramWarnings = True Then 'add also telegram checkbox
+            Try
+                Dim uri As New Uri(ThirteenTextBox2.Text & "api-telegram.php?Log=" & log)
+                Using client As HttpClient = New HttpClient
+                    Using response As HttpResponseMessage = Await client.GetAsync(uri)
+                        Using content As HttpContent = response.Content
+                            Dim result As String = Await content.ReadAsStringAsync()
+                            If result IsNot Nothing Then
+                                'Console.WriteLine(result.ToString())
+                            End If
+                        End Using
+                    End Using
+                End Using
+
+            Catch ex As Exception
+                ThirteenTextBox1.Text = Label1.Text & " - Could not communicate with the Telegram Server" & Environment.NewLine & ThirteenTextBox1.Text
+                ThirteenTextBox1.Text = Label1.Text & " - " & ex.ToString & Environment.NewLine & ThirteenTextBox1.Text
+            End Try
+            sendTelegramWarnings = False
         End If
 
     End Sub
@@ -366,12 +388,35 @@ Public Class Form1
         Label13.Text = "RAM Usage " & TrackBar1.Value & "%"
     End Sub
 
-    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+    Private Async Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
         Try
             ReleaseMemory() 'every 60sec it tries to free some ram
         Catch
             getLog("Error while releasing memory")
         End Try
+
+
+
+        If sendTelegramWarnings = False Then
+            sendTelegramWarnings = True
+        End If
+
+
+
+        If Timer2.Enabled = True And ThirteenCheckBox3.Checked = True Then
+            Dim uri As New Uri(ThirteenTextBox2.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(Label4.Text) & "~" & Num(Label9.Text) &
+                               "~" & Num(Label14.Text) & "~" & Num(Label3.Text) & "~" & Num(Label5.Text))
+            Using client As HttpClient = New HttpClient
+                Using response As HttpResponseMessage = Await client.GetAsync(uri)
+                    Using content As HttpContent = response.Content
+                        Dim result As String = Await content.ReadAsStringAsync()
+                        If result IsNot Nothing Then
+                            'Console.WriteLine(result.ToString())
+                        End If
+                    End Using
+                End Using
+            End Using
+        End If
     End Sub
 
     Private Sub ThirteenButton5_Click(sender As Object, e As EventArgs) Handles ThirteenButton5.Click

@@ -2,6 +2,31 @@
 Imports OpenHardwareMonitor.Hardware
 
 Module PerformanceCounters
+#Region "ALL Variables"
+    'RAM
+    Dim RamUsage As String
+    'PING
+    Dim Result As Net.NetworkInformation.PingReply
+    Dim SendPing As New Net.NetworkInformation.Ping
+    Dim ResponseTime As Long
+    'CPU
+    Dim backupcpu As String
+    Dim cpuUsage As PerformanceCounter = New PerformanceCounter("Processor", "% Processor Time", "_Total")
+    'NETWORK
+    Dim backupNetwork As String
+    Dim strArrNetwork() As String
+
+    Public cp As New Computer()
+
+    'Dim networkInterfaces As New System.Diagnostics.PerformanceCounterCategory("Network Interface")
+    'Dim nics As String() = networkInterfaces.GetInstanceNames()
+    'Dim bytesSent(nics.Length - 1) As System.Diagnostics.PerformanceCounter
+    'Dim bytesReceived(nics.Length - 1) As System.Diagnostics.PerformanceCounter
+    'OpenHardwareMonitor
+    'Dim cp As New Computer()
+
+#End Region
+
     Public Function getWindowsVersion() As String
         Dim WindowsVersion As String = My.Computer.Info.OSFullName              'get windows version
         WindowsVersion = WindowsVersion.Replace("Microsoft ", "")               'removes Microsoft from FULL OS NAME
@@ -18,17 +43,11 @@ Module PerformanceCounters
         Return _IP
     End Function
     Public Function getRAM() As String
-        'RAM
-        Dim RamUsage As String
         RamUsage = (100 - (My.Computer.Info.AvailablePhysicalMemory / My.Computer.Info.TotalPhysicalMemory * 100)).ToString("f")
         Return "RAM: " & Int(RamUsage) & "% used"
     End Function
 
     Public Async Sub getPing()
-        'PING
-        Dim Result As Net.NetworkInformation.PingReply
-        Dim SendPing As New Net.NetworkInformation.Ping
-        Dim ResponseTime As Long
         'Dim thread As New Thread(
         'Sub()
 
@@ -50,10 +69,7 @@ Module PerformanceCounters
     End Sub
 
     Public Async Sub getCPU()
-        'CPU
-        Dim backupcpu As String
-        Dim cpuUsage As PerformanceCounter
-        cpuUsage = New PerformanceCounter("Processor", "% Processor Time", "_Total")
+        'cpuUsage = New PerformanceCounter("Processor", "% Processor Time", "_Total")
         backupcpu = "CPU: " & Int(cpuUsage.NextValue()) & "% used"
         Await Task.Delay(1000)
         'System.Threading.Thread.Sleep(1000)
@@ -67,9 +83,6 @@ Module PerformanceCounters
     End Sub
 
     Public Async Sub getNetwork()
-        'NETWORK
-        Dim backupNetwork As String
-        Dim strArrNetwork() As String
         Dim networkInterfaces As New System.Diagnostics.PerformanceCounterCategory("Network Interface")
         Dim nics As String() = networkInterfaces.GetInstanceNames()
         Dim bytesSent(nics.Length - 1) As System.Diagnostics.PerformanceCounter
@@ -103,15 +116,43 @@ Module PerformanceCounters
 
 
     End Sub
-
     Public Sub getGPUTemp()
         'GPU TEMP
-        Dim cp As New Computer()
-        cp.Open()
-        cp.GPUEnabled = True
+        'Dim cp As New Computer()
+        If cp.GPUEnabled = False Then
+            cp.GPUEnabled = True
+            cp.Open()
+        End If
+        'cp.Open()
 
+        'For i As Integer = 0 To cp.Hardware.Length - 1
+        '    Dim hw = cp.Hardware(i)
+
+        '    Select Case hw.HardwareType
+
+        '        Case HardwareType.GpuAti
+        '            For j = 0 To hw.Sensors.Length - 1
+        '                Dim sensor = hw.Sensors(j)
+        '                If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
+        '                    Form1.GlobalVariables.GPUTemp = "GPU: " & sensor.Value & " Celsius"
+        '                    Exit Sub
+        '                End If
+        '            Next
+
+        '        Case HardwareType.GpuNvidia
+        '            For j = 0 To hw.Sensors.Length - 1
+        '                Dim sensor = hw.Sensors(j)
+        '                If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
+        '                    Form1.GlobalVariables.GPUTemp = "GPU: " & sensor.Value & " Celsius"
+        '                    Exit Sub
+        '                End If
+        '            Next
+        '    End Select
+        'Next
+
+
+        'Not WORKING THIS
         Dim gpus = cp.Hardware.Where(Function(hw) hw.HardwareType = HardwareType.GpuNvidia Or hw.HardwareType = HardwareType.GpuAti).ToArray()
-
         For Each gpu In gpus
             Dim sensors = gpu.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToArray()
             For Each sensor In sensors
@@ -120,29 +161,42 @@ Module PerformanceCounters
         Next
 
         'cp.Close()
+        cp.Reset()
 
     End Sub
     Public Sub getCPUTemp()
         'CPU TEMP
-        Dim cp As New Computer()
-        cp.Open()
-        cp.CPUEnabled = True
+        'Dim cp As New Computer()
+        If cp.CPUEnabled = False Then
+            cp.CPUEnabled = True
+            cp.Open()
+        End If
+        'cp.Open()
 
-        'Dim Info As String = ""
-        For i As Integer = 0 To cp.Hardware.Length - 1
-            Dim hw = cp.Hardware(i)
 
-            Select Case hw.HardwareType
+        'For i As Integer = 0 To cp.Hardware.Length - 1
+        '    Dim hw = cp.Hardware(i)
 
-                Case HardwareType.CPU
-                    For j = 0 To hw.Sensors.Length - 1
-                        Dim sensor = hw.Sensors(j)
-                        If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
-                            Form1.GlobalVariables.CPUTemp = "CPU: " & sensor.Value & " Celsius"
-                        End If
-                    Next
-            End Select
+        '    Select Case hw.HardwareType
+
+        '        Case HardwareType.CPU
+        '            For j = 0 To hw.Sensors.Length - 1
+        '                Dim sensor = hw.Sensors(j)
+        '                If cp.Hardware(i).Sensors(j).SensorType = SensorType.Temperature Then
+        '                    Form1.GlobalVariables.CPUTemp = "CPU: " & sensor.Value & " Celsius"
+        '                End If
+        '            Next
+        '    End Select
+        'Next
+
+        Dim cpus = cp.Hardware.Where(Function(hw) hw.HardwareType = HardwareType.CPU).ToArray()
+        For Each cpu In cpus
+            Dim sensors = cpu.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToArray()
+            For Each sensor In sensors
+                Form1.GlobalVariables.CPUTemp = "CPU: " & sensor.Value & " Celsius"
+            Next
         Next
         'cp.Close()
+        cp.Reset()
     End Sub
 End Module

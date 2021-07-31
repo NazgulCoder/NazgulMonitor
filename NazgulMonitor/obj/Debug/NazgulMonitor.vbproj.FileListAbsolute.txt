@@ -10,3 +10,5 @@ C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\bin\De
 C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\Debug\NazgulMonitor.exe
 C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\Debug\NazgulMonitor.xml
 C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\Debug\NazgulMonitor.pdb
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\bin\Debug\OpenHardwareMonitorLib.dll
+C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\Debug\NazgulMonitor.vbproj.CopyComplete
