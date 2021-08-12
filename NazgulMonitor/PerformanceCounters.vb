@@ -113,8 +113,6 @@ Module PerformanceCounters
         Catch
             Console.WriteLine("Error while retrieving Network Stats")
         End Try
-
-
     End Sub
     Public Sub getGPUTemp()
         'GPU TEMP
@@ -150,8 +148,6 @@ Module PerformanceCounters
         '    End Select
         'Next
 
-
-        'Not WORKING THIS
         Dim gpus = cp.Hardware.Where(Function(hw) hw.HardwareType = HardwareType.GpuNvidia Or hw.HardwareType = HardwareType.GpuAti).ToArray()
         For Each gpu In gpus
             Dim sensors = gpu.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToArray()

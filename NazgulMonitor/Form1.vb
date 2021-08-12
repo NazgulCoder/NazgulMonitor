@@ -84,6 +84,10 @@ Public Class Form1
         Else
             TopMost = False
         End If
+
+        If ThirteenCheckBox7.Checked = True Then
+            SetAutoRun()
+        End If
     End Sub
     Private Sub SetAutoRun()
         If iAutoRun <= (NumericUpDown1.Value * 60) Then
@@ -111,10 +115,6 @@ Public Class Form1
 
     Private Async Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
         'InternetConnection() 'this does not require the exception #implemented in getPing()
-        If ThirteenCheckBox7.Checked = True Then
-            SetAutoRun()
-        End If
-
         Try
             getCPU()
             Label3.Text = GlobalVariables.CPUusage
@@ -239,11 +239,12 @@ Public Class Form1
         '            "&Log=")
         'End If
 
-        Dim uri As New Uri(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
+
+        Using client As HttpClient = New HttpClient
+            Dim uri As New Uri(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
                    Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text & ";" & "Last Update: " & Label1.Text &
                    "&Log=")
-        Using client As HttpClient = New HttpClient
-            Using response As HttpResponseMessage = Await client.GetAsync(uri)
+            Using response As HttpResponseMessage = Await client.GetAsync(Uri)
                 Using content As HttpContent = response.Content
                     Dim result As String = Await content.ReadAsStringAsync()
                     If result IsNot Nothing Then
@@ -322,10 +323,10 @@ Public Class Form1
         'SEND WARNING LOGS TO WEBSERVER
         If ThirteenCheckBox3.Checked = True Then
             Try
-                Dim uri As New Uri(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
+                Using client As HttpClient = New HttpClient
+                    Dim uri As New Uri(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
                    Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text & ";" & "Last Update: " & Label1.Text &
                    "&Log=" & Label1.Text & " - " & log)
-                Using client As HttpClient = New HttpClient
                     Using response As HttpResponseMessage = Await client.GetAsync(uri)
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
@@ -342,10 +343,10 @@ Public Class Form1
             End Try
         End If
 
-        If sendTelegramWarnings = True Then 'add also telegram checkbox
+        If sendTelegramWarnings = True And ThirteenCheckBox8.Checked = True Then
             Try
-                Dim uri As New Uri(ThirteenTextBox2.Text & "api-telegram.php?Log=" & log)
                 Using client As HttpClient = New HttpClient
+                    Dim uri As New Uri(ThirteenTextBox2.Text & "api-telegram.php?Log=" & log)
                     Using response As HttpResponseMessage = Await client.GetAsync(uri)
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
@@ -369,6 +370,7 @@ Public Class Form1
         ThirteenButton3.Enabled = False
         ThirteenButton4.Enabled = True
         ThirteenButton6.Enabled = False
+        Timer2.Interval = NumericUpDown2.Value * 1000
         saveConfig() 'saves configs into config.ini
     End Sub
     Private Sub ThirteenButton3_Click(sender As Object, e As EventArgs) Handles ThirteenButton3.Click
@@ -396,17 +398,17 @@ Public Class Form1
         End Try
 
 
-
+        'sets again the boolean true for the telegram warnings (once every 60 sec)
         If sendTelegramWarnings = False Then
             sendTelegramWarnings = True
         End If
 
 
-
+        'sends every 60 sec the info to the charts csv
         If Timer2.Enabled = True And ThirteenCheckBox3.Checked = True Then
-            Dim uri As New Uri(ThirteenTextBox2.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(Label4.Text) & "~" & Num(Label9.Text) &
-                               "~" & Num(Label14.Text) & "~" & Num(Label3.Text) & "~" & Num(Label5.Text))
             Using client As HttpClient = New HttpClient
+                Dim uri As New Uri(ThirteenTextBox2.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(Label4.Text) & "~" & Num(Label9.Text) &
+                               "~" & Num(Label14.Text) & "~" & Num(Label3.Text) & "~" & Num(Label5.Text))
                 Using response As HttpResponseMessage = Await client.GetAsync(uri)
                     Using content As HttpContent = response.Content
                         Dim result As String = Await content.ReadAsStringAsync()
@@ -440,7 +442,9 @@ Public Class Form1
         ThirteenCheckBox5.Checked = True
         ThirteenCheckBox6.Checked = False
         ThirteenCheckBox7.Checked = False
+        ThirteenCheckBox8.Checked = False
         NumericUpDown1.Value = 1
+        NumericUpDown2.Value = 1
         saveConfig()
     End Sub
 
@@ -459,7 +463,9 @@ Public Class Form1
         Dim gputemp As String
         Dim topmost As String
         Dim restart As String
+        Dim telegram As String
         Dim restarttime As String = NumericUpDown1.Value
+        Dim refreshdata As String = NumericUpDown2.Value
 
         If ThirteenCheckBox1.Checked = True Then
             cputemp = "1"
@@ -496,11 +502,16 @@ Public Class Form1
         Else
             restart = "0"
         End If
+        If ThirteenCheckBox8.Checked = True Then
+            telegram = "1"
+        Else
+            telegram = "0"
+        End If
 
         Try
             Using writer As New StreamWriter("config.ini", False)
                 writer.Write(trackbarvalue & "~" & webserver & "~" & cputemp & "~" & network & "~" & sendlogswebserver & "~" & savelocal &
-                             "~" & gputemp & "~" & topmost & "~" & restart & "~" & restarttime)
+                             "~" & gputemp & "~" & topmost & "~" & restart & "~" & restarttime & "~" & telegram & "~" & refreshdata)
             End Using
         Catch
             ThirteenTextBox1.Text = Label1.Text & " - Could not update config.ini" & Environment.NewLine & ThirteenTextBox1.Text
@@ -556,6 +567,12 @@ Public Class Form1
             ThirteenCheckBox7.Checked = False
         End If
         NumericUpDown1.Value = strArr(9)
+        If strArr(10) = "1" Then
+            ThirteenCheckBox8.Checked = True
+        Else
+            ThirteenCheckBox8.Checked = False
+        End If
+        NumericUpDown2.Value = strArr(11)
 
 
         'setting max values for logs

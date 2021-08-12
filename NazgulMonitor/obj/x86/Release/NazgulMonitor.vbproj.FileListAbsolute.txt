@@ -11,4 +11,3 @@ C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x8
 C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x86\Release\NazgulMonitor.exe
 C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x86\Release\NazgulMonitor.xml
 C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x86\Release\NazgulMonitor.pdb
-C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\obj\x86\Release\NazgulMonitor.vbprojAssemblyReference.cache
