@@ -5,7 +5,6 @@ Imports System.Net.Http
 Imports System.Timers
 Imports Timer = System.Timers.Timer
 Imports System.Net
-
 Public Class Form1
     Dim lockLogs As New Object
     Dim lockWarnings As New Object
