@@ -152,6 +152,7 @@
     <Import Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Fixers.vb" />
     <Compile Include="Converters.vb" />
     <Compile Include="Theme.vb">
       <SubType>Component</SubType>

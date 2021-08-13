@@ -5219,3 +5219,915 @@
 24 Jul 2021 - 21:54:10;RAM Usage 77%
 24 Jul 2021 - 21:54:11;RAM Usage 77%
 24 Jul 2021 - 21:54:12;RAM Usage 77%
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;Can't send logs to webserver
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:47;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;Can't send logs to webserver
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:48;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:49;Can't send logs to webserver
+13 Aug 2021 - 11:30:49;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:50;Can't send logs to webserver
+13 Aug 2021 - 11:30:50;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:51;Can't send logs to webserver
+13 Aug 2021 - 11:30:51;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:52;Can't send logs to webserver
+13 Aug 2021 - 11:30:52;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:30:59;Can't send logs to webserver
+13 Aug 2021 - 11:30:59;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:00;Can't send logs to webserver
+13 Aug 2021 - 11:31:00;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:01;Can't send logs to webserver
+13 Aug 2021 - 11:31:01;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:02;Can't send logs to webserver
+13 Aug 2021 - 11:31:02;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:03;Can't send logs to webserver
+13 Aug 2021 - 11:31:03;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:04;Can't send logs to webserver
+13 Aug 2021 - 11:31:04;Can't send logs to webserver
+13 Aug 2021 - 11:31:04;Can't send logs to webserver
+13 Aug 2021 - 11:31:04;Can't send logs to webserver
+13 Aug 2021 - 11:31:04;Can't send logs to webserver
+13 Aug 2021 - 11:31:04;Can't send logs to webserver
+13 Aug 2021 - 11:31:04;Can't send logs to webserver
+13 Aug 2021 - 11:31:04;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:04;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:04;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:04;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:04;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:04;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:04;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:05;Can't send logs to webserver
+13 Aug 2021 - 11:31:05;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:06;Can't send logs to webserver
+13 Aug 2021 - 11:31:06;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:07;Can't send logs to webserver
+13 Aug 2021 - 11:31:07;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:08;Can't send logs to webserver
+13 Aug 2021 - 11:31:08;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:09;Can't send logs to webserver
+13 Aug 2021 - 11:31:09;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:26;Can't send logs to webserver
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:27;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:29;Can't send logs to webserver
+13 Aug 2021 - 11:31:29;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:30;Can't send logs to webserver
+13 Aug 2021 - 11:31:30;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:32;Can't send logs to webserver
+13 Aug 2021 - 11:31:32;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:32;Can't send logs to webserver
+13 Aug 2021 - 11:31:32;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:33;Can't send logs to webserver
+13 Aug 2021 - 11:31:33;Can't send logs to webserver
+13 Aug 2021 - 11:31:33;Can't send logs to webserver
+13 Aug 2021 - 11:31:33;Can't send logs to webserver
+13 Aug 2021 - 11:31:33;Can't send logs to webserver
+13 Aug 2021 - 11:31:33;Can't send logs to webserver
+13 Aug 2021 - 11:31:33;Can't send logs to webserver
+13 Aug 2021 - 11:31:33;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:33;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:33;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:33;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:33;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:33;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:33;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:35;Can't send logs to webserver
+13 Aug 2021 - 11:31:35;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:35;Can't send logs to webserver
+13 Aug 2021 - 11:31:35;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:36;Can't send logs to webserver
+13 Aug 2021 - 11:31:36;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127
+13 Aug 2021 - 11:31:37;Can't send logs to webserver
+13 Aug 2021 - 11:31:37;System.Net.Http.HttpRequestException: An error occurred while sending the request. ---> System.Net.WebException: The remote name could not be resolved: 'nazgul.altervista.org'
+   at System.Net.HttpWebRequest.EndGetResponse(IAsyncResult asyncResult)
+   at System.Net.Http.HttpClientHandler.GetResponseCallback(IAsyncResult ar)
+   --- End of inner exception stack trace ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_25_sendLogs.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 389
+--- End of stack trace from previous location where exception was thrown ---
+   at System.Runtime.CompilerServices.TaskAwaiter.ThrowForNonSuccess(Task task)
+   at System.Runtime.CompilerServices.TaskAwaiter.HandleNonSuccessAndDebuggerNotification(Task task)
+   at NazgulMonitor.Form1.VB$StateMachine_13_twoTimerEvent.MoveNext() in C:\Users\Work Hard Play Hard\Desktop\Progetti\NazgulMonitor\NazgulMonitor\Form1.vb:line 127

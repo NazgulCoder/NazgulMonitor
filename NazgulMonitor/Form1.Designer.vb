@@ -29,6 +29,9 @@ Partial Class Form1
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         Me.ThirteenForm1 = New NazgulMonitor.ThirteenForm()
+        Me.Label18 = New System.Windows.Forms.Label()
+        Me.Label17 = New System.Windows.Forms.Label()
+        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
         Me.ThirteenCheckBox8 = New NazgulMonitor.ThirteenCheckBox()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
@@ -64,14 +67,11 @@ Partial Class Form1
         Me.Label1 = New System.Windows.Forms.Label()
         Me.ThirteenButton2 = New NazgulMonitor.ThirteenButton()
         Me.ThirteenButton1 = New NazgulMonitor.ThirteenButton()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.Label18 = New System.Windows.Forms.Label()
         Me.ThirteenForm1.SuspendLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -84,7 +84,6 @@ Partial Class Form1
         '
         'Timer3
         '
-        Me.Timer3.Enabled = True
         Me.Timer3.Interval = 60000
         '
         'NotifyIcon1
@@ -145,6 +144,36 @@ Partial Class Form1
         Me.ThirteenForm1.TabIndex = 0
         Me.ThirteenForm1.Text = "NazgulMonitor"
         '
+        'Label18
+        '
+        Me.Label18.AutoSize = True
+        Me.Label18.BackColor = System.Drawing.Color.Transparent
+        Me.Label18.Location = New System.Drawing.Point(175, 342)
+        Me.Label18.Name = "Label18"
+        Me.Label18.Size = New System.Drawing.Size(84, 17)
+        Me.Label18.TabIndex = 39
+        Me.Label18.Text = "Refresh every"
+        '
+        'Label17
+        '
+        Me.Label17.AutoSize = True
+        Me.Label17.BackColor = System.Drawing.Color.Transparent
+        Me.Label17.Location = New System.Drawing.Point(327, 342)
+        Me.Label17.Name = "Label17"
+        Me.Label17.Size = New System.Drawing.Size(52, 17)
+        Me.Label17.TabIndex = 38
+        Me.Label17.Text = "seconds"
+        '
+        'NumericUpDown2
+        '
+        Me.NumericUpDown2.Location = New System.Drawing.Point(265, 334)
+        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {3600, 0, 0, 0})
+        Me.NumericUpDown2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.NumericUpDown2.Name = "NumericUpDown2"
+        Me.NumericUpDown2.Size = New System.Drawing.Size(56, 25)
+        Me.NumericUpDown2.TabIndex = 37
+        Me.NumericUpDown2.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
         'ThirteenCheckBox8
         '
         Me.ThirteenCheckBox8.BackColor = System.Drawing.Color.Transparent
@@ -162,7 +191,7 @@ Partial Class Form1
         '
         Me.Label16.AutoSize = True
         Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Location = New System.Drawing.Point(327, 317)
+        Me.Label16.Location = New System.Drawing.Point(327, 312)
         Me.Label16.Name = "Label16"
         Me.Label16.Size = New System.Drawing.Size(82, 17)
         Me.Label16.TabIndex = 35
@@ -170,7 +199,7 @@ Partial Class Form1
         '
         'NumericUpDown1
         '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(265, 309)
+        Me.NumericUpDown1.Location = New System.Drawing.Point(265, 304)
         Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
         Me.NumericUpDown1.Name = "NumericUpDown1"
         Me.NumericUpDown1.Size = New System.Drawing.Size(56, 25)
@@ -183,7 +212,7 @@ Partial Class Form1
         Me.ThirteenCheckBox7.Checked = False
         Me.ThirteenCheckBox7.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
         Me.ThirteenCheckBox7.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox7.Location = New System.Drawing.Point(165, 314)
+        Me.ThirteenCheckBox7.Location = New System.Drawing.Point(165, 309)
         Me.ThirteenCheckBox7.Name = "ThirteenCheckBox7"
         Me.ThirteenCheckBox7.Size = New System.Drawing.Size(93, 17)
         Me.ThirteenCheckBox7.TabIndex = 33
@@ -196,7 +225,7 @@ Partial Class Form1
         Me.ThirteenButton6.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
         Me.ThirteenButton6.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
         Me.ThirteenButton6.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton6.Location = New System.Drawing.Point(84, 340)
+        Me.ThirteenButton6.Location = New System.Drawing.Point(84, 335)
         Me.ThirteenButton6.Name = "ThirteenButton6"
         Me.ThirteenButton6.Size = New System.Drawing.Size(75, 23)
         Me.ThirteenButton6.TabIndex = 32
@@ -209,7 +238,7 @@ Partial Class Form1
         Me.ThirteenCheckBox6.Checked = False
         Me.ThirteenCheckBox6.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
         Me.ThirteenCheckBox6.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox6.Location = New System.Drawing.Point(278, 525)
+        Me.ThirteenCheckBox6.Location = New System.Drawing.Point(278, 520)
         Me.ThirteenCheckBox6.Name = "ThirteenCheckBox6"
         Me.ThirteenCheckBox6.Size = New System.Drawing.Size(119, 17)
         Me.ThirteenCheckBox6.TabIndex = 31
@@ -222,7 +251,7 @@ Partial Class Form1
         Me.ThirteenButton5.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
         Me.ThirteenButton5.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
         Me.ThirteenButton5.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton5.Location = New System.Drawing.Point(3, 340)
+        Me.ThirteenButton5.Location = New System.Drawing.Point(3, 335)
         Me.ThirteenButton5.Name = "ThirteenButton5"
         Me.ThirteenButton5.Size = New System.Drawing.Size(75, 23)
         Me.ThirteenButton5.TabIndex = 30
@@ -245,7 +274,7 @@ Partial Class Form1
         'Label15
         '
         Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(265, 248)
+        Me.Label15.Location = New System.Drawing.Point(265, 243)
         Me.Label15.Name = "Label15"
         Me.Label15.Size = New System.Drawing.Size(108, 17)
         Me.Label15.TabIndex = 28
@@ -263,7 +292,7 @@ Partial Class Form1
         'Label13
         '
         Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(265, 231)
+        Me.Label13.Location = New System.Drawing.Point(265, 226)
         Me.Label13.Name = "Label13"
         Me.Label13.Size = New System.Drawing.Size(73, 17)
         Me.Label13.TabIndex = 26
@@ -272,7 +301,7 @@ Partial Class Form1
         'Label12
         '
         Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(108, 248)
+        Me.Label12.Location = New System.Drawing.Point(108, 243)
         Me.Label12.Name = "Label12"
         Me.Label12.Size = New System.Drawing.Size(71, 17)
         Me.Label12.TabIndex = 25
@@ -281,7 +310,7 @@ Partial Class Form1
         'Label11
         '
         Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(108, 231)
+        Me.Label11.Location = New System.Drawing.Point(108, 226)
         Me.Label11.Name = "Label11"
         Me.Label11.Size = New System.Drawing.Size(107, 17)
         Me.Label11.TabIndex = 24
@@ -290,7 +319,7 @@ Partial Class Form1
         'Label10
         '
         Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 231)
+        Me.Label10.Location = New System.Drawing.Point(3, 226)
         Me.Label10.Name = "Label10"
         Me.Label10.Size = New System.Drawing.Size(99, 17)
         Me.Label10.TabIndex = 23
@@ -323,7 +352,7 @@ Partial Class Form1
         '
         'TrackBar1
         '
-        Me.TrackBar1.Location = New System.Drawing.Point(165, 279)
+        Me.TrackBar1.Location = New System.Drawing.Point(165, 274)
         Me.TrackBar1.Maximum = 100
         Me.TrackBar1.Minimum = 25
         Me.TrackBar1.Name = "TrackBar1"
@@ -375,7 +404,7 @@ Partial Class Form1
         Me.ThirteenTextBox1.ColorScheme = NazgulMonitor.ThirteenTextBox.ColorSchemes.Dark
         Me.ThirteenTextBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
         Me.ThirteenTextBox1.ForeColor = System.Drawing.Color.White
-        Me.ThirteenTextBox1.Location = New System.Drawing.Point(3, 370)
+        Me.ThirteenTextBox1.Location = New System.Drawing.Point(3, 365)
         Me.ThirteenTextBox1.Multiline = True
         Me.ThirteenTextBox1.Name = "ThirteenTextBox1"
         Me.ThirteenTextBox1.ReadOnly = True
@@ -390,7 +419,7 @@ Partial Class Form1
         Me.ThirteenButton4.Enabled = False
         Me.ThirteenButton4.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
         Me.ThirteenButton4.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton4.Location = New System.Drawing.Point(84, 311)
+        Me.ThirteenButton4.Location = New System.Drawing.Point(84, 306)
         Me.ThirteenButton4.Name = "ThirteenButton4"
         Me.ThirteenButton4.Size = New System.Drawing.Size(75, 23)
         Me.ThirteenButton4.TabIndex = 15
@@ -404,7 +433,7 @@ Partial Class Form1
         Me.ThirteenButton3.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
         Me.ThirteenButton3.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
         Me.ThirteenButton3.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton3.Location = New System.Drawing.Point(3, 311)
+        Me.ThirteenButton3.Location = New System.Drawing.Point(3, 306)
         Me.ThirteenButton3.Name = "ThirteenButton3"
         Me.ThirteenButton3.Size = New System.Drawing.Size(75, 23)
         Me.ThirteenButton3.TabIndex = 14
@@ -415,7 +444,7 @@ Partial Class Form1
         '
         Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
         Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-79, 213)
+        Me.PictureBox1.Location = New System.Drawing.Point(-79, 208)
         Me.PictureBox1.Name = "PictureBox1"
         Me.PictureBox1.Size = New System.Drawing.Size(570, 15)
         Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
@@ -502,7 +531,7 @@ Partial Class Form1
         '
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(3, 525)
+        Me.Label1.Location = New System.Drawing.Point(3, 520)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(36, 17)
         Me.Label1.TabIndex = 2
@@ -536,36 +565,6 @@ Partial Class Form1
         Me.ThirteenButton1.Text = "_"
         Me.ThirteenButton1.UseVisualStyleBackColor = False
         '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(265, 339)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {3600, 0, 0, 0})
-        Me.NumericUpDown2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(56, 25)
-        Me.NumericUpDown2.TabIndex = 37
-        Me.NumericUpDown2.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Location = New System.Drawing.Point(327, 347)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(52, 17)
-        Me.Label17.TabIndex = 38
-        Me.Label17.Text = "seconds"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Location = New System.Drawing.Point(175, 347)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(84, 17)
-        Me.Label18.TabIndex = 39
-        Me.Label18.Text = "Refresh every"
-        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -579,10 +578,10 @@ Partial Class Form1
         Me.Text = "NazgulMonitor"
         Me.ThirteenForm1.ResumeLayout(False)
         Me.ThirteenForm1.PerformLayout()
+        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
