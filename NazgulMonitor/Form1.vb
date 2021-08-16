@@ -31,8 +31,8 @@ Public Class Form1
         loadConfig()                                                                'loads configs from config.ini
         checkIfAutorun()
 
-        Label2.Text = getWindowsVersion()
-        Label6.Text = "Int IP: " & getInternalIP()
+        WinVersionLabel.Text = getWindowsVersion()
+        IntIPLabel.Text = "Int IP: " & getInternalIP()
     End Sub
     Private Sub buildTimers()
         ServicePointManager.ServerCertificateValidationCallback = AddressOf AcceptAllCertifications
@@ -53,68 +53,68 @@ Public Class Form1
     End Sub
     Private Sub oneTimerEvent(ByVal source As Object, ByVal e As ElapsedEventArgs)
         'Label1.Text = DateTime.Now.ToString("dd MMM yyyy HH:mm:ss")
-        bypassCrossThread(Label1, DateTime.Now.ToString("dd MMM yyyy HH:mm:ss"))
+        bypassCrossThread(TimeLabel, DateTime.Now.ToString("dd MMM yyyy HH:mm:ss"))
 
-        If ThirteenCheckBox7.Checked = True Then
+        If AutoRestartCheckBox.Checked = True Then
             SetAutoRun()
         End If
     End Sub
     Private Async Sub twoTimerEvent(ByVal source As Object, ByVal e As ElapsedEventArgs)
         Try
             getCPU()
-            bypassCrossThread(Label3, GlobalVariables.CPUusage)
+            bypassCrossThread(CPUUsageLabel, GlobalVariables.CPUusage)
         Catch
             getLog("Failed to get CPU usage")
         End Try
 
-        If ThirteenCheckBox2.Checked = True Then
+        If NetworkStatsCheckBox.Checked = True Then
             getPing()
-            bypassCrossThread(Label4, GlobalVariables.PingResult)
+            bypassCrossThread(PingLabel, GlobalVariables.PingResult)
         Else
-            bypassCrossThread(Label4, "Ping: Disabled")
+            bypassCrossThread(PingLabel, "Ping: Disabled")
         End If
 
         Try
-            bypassCrossThread(Label5, getRAM)
+            bypassCrossThread(RAMUsageLabel, getRAM)
         Catch
             getLog("Failed to get RAM usage")
         End Try
 
-        If ThirteenCheckBox2.Checked = True Then
+        If NetworkStatsCheckBox.Checked = True Then
             Try
                 getNetwork()
-                bypassCrossThread(Label7, GlobalVariables.upload)
-                bypassCrossThread(Label8, GlobalVariables.download)
+                bypassCrossThread(UploadLabel, GlobalVariables.upload)
+                bypassCrossThread(DownloadLabel, GlobalVariables.download)
             Catch
                 getLog("Failed to get Network usage")
             End Try
         Else
-            bypassCrossThread(Label7, "Upload: Disabled")
-            bypassCrossThread(Label8, "Download: Disabled")
+            bypassCrossThread(UploadLabel, "Upload: Disabled")
+            bypassCrossThread(DownloadLabel, "Download: Disabled")
         End If
 
-        If ThirteenCheckBox1.Checked = True Then
+        If CPUTempCheckBox.Checked = True Then
             Try
                 getCPUTemp()
-                bypassCrossThread(Label9, GlobalVariables.CPUTemp)
+                bypassCrossThread(CPUTempLabel, GlobalVariables.CPUTemp)
             Catch ex As Exception
                 getLog("Failed to get CPU Temperature")
                 getLog(ex.ToString)
             End Try
         Else
-            bypassCrossThread(Label9, "CPU: Disabled")
+            bypassCrossThread(CPUTempLabel, "CPU: Disabled")
         End If
 
-        If ThirteenCheckBox5.Checked = True Then
+        If GPUTempCheckBox.Checked = True Then
             Try
                 getGPUTemp()
-                bypassCrossThread(Label14, GlobalVariables.GPUTemp)
+                bypassCrossThread(GPUTempLabel, GlobalVariables.GPUTemp)
             Catch ex As Exception
                 getLog("Failed to get GPU Temperature")
                 getLog(ex.ToString)
             End Try
         Else
-            bypassCrossThread(Label14, "GPU: Disabled")
+            bypassCrossThread(GPUTempLabel, "GPU: Disabled")
         End If
 
         Try
@@ -141,11 +141,11 @@ Public Class Form1
 
 
         'sends every 60 sec the info to the charts csv
-        If twoTimer.Enabled = True And ThirteenCheckBox3.Checked = True Then
+        If twoTimer.Enabled = True And WebserverCheckBox.Checked = True Then
             Try
                 Using client As HttpClient = New HttpClient
-                    Dim uri As New Uri(ThirteenTextBox2.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(Label4.Text) & "~" & Num(Label9.Text) &
-                                   "~" & Num(Label14.Text) & "~" & Num(Label3.Text) & "~" & Num(Label5.Text))
+                    Dim uri As New Uri(WebserverTextBox.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(PingLabel.Text) & "~" & Num(CPUTempLabel.Text) &
+                                   "~" & Num(GPUTempLabel.Text) & "~" & Num(CPUUsageLabel.Text) & "~" & Num(RAMUsageLabel.Text))
                     Using response As HttpResponseMessage = Await client.GetAsync(uri)
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
@@ -156,8 +156,16 @@ Public Class Form1
                     End Using
                 End Using
             Catch ex As Exception
-                ThirteenTextBox1.Text = Label1.Text & " - Could not communicate with the webserver for api-charts" & Environment.NewLine & ThirteenTextBox1.Text
-                ThirteenTextBox1.Text = Label1.Text & " - " & ex.ToString & Environment.NewLine & ThirteenTextBox1.Text
+                bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - Could not communicate with the webserver for api-charts" & Environment.NewLine &
+                                  CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - " & ex.ToString & Environment.NewLine &
+                                  CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                'LogsTextBox.Text = TimeLabel.Text & " - Could not communicate with the webserver for api-charts" & Environment.NewLine & LogsTextBox.Text
+                'LogsTextBox.Text = TimeLabel.Text & " - " & ex.ToString & Environment.NewLine & LogsTextBox.Text
             End Try
         End If
     End Sub
@@ -188,11 +196,11 @@ Public Class Form1
             Console.Write("catch for autorun")
         End Try
     End Sub
-    Private Sub ThirteenButton1_Click(sender As Object, e As EventArgs) Handles ThirteenButton1.Click
+    Private Sub MinimizeButton_Click(sender As Object, e As EventArgs) Handles MinimizeButton.Click
         Me.WindowState = FormWindowState.Minimized
     End Sub
 
-    Private Sub ThirteenButton2_Click(sender As Object, e As EventArgs) Handles ThirteenButton2.Click
+    Private Sub CloseButton_Click(sender As Object, e As EventArgs) Handles CloseButton.Click
         Dim dlgR As DialogResult
 
         dlgR = MessageBox.Show("Are you sure you want to close NazgulMonitor?",
@@ -204,7 +212,7 @@ Public Class Form1
         End If
     End Sub
     Private Sub SetAutoRun()
-        If iAutoRun <= (NumericUpDown1.Value * 60) Then
+        If iAutoRun <= (CInt(Invoke(New Func(Of Integer)(Function() Me.AutoRestartMinutesUpDownNumeric.Value))) * 60) Then
             iAutoRun += 1
         Else
             Dim P As Process = New Process
@@ -212,13 +220,16 @@ Public Class Form1
                 .EnableRaisingEvents = True
                 .StartInfo.FileName = "NazgulMonitor.exe"
 
-                If ThirteenCheckBox6.Checked = False Then
+                If TopMostCheckBox.Checked = False Then
                     .StartInfo.Arguments = "--NazgulMonitorAutorunMinimized"
                 Else
                     .StartInfo.Arguments = "--NazgulMonitorAutorun"
                 End If
 
             End With
+            oneTimer.Enabled = False
+            twoTimer.Enabled = False
+            threeTimer.Enabled = False
             P.Start()
             Thread.Sleep(2000)
             removeNotifyIcon()
@@ -239,41 +250,49 @@ Public Class Form1
 
 
         SyncLock lockLogs
-            If ThirteenCheckBox4.Checked = True Then
+            If LocalCSVCheckBox.Checked = True Then
                 Try
                     Using writer As New StreamWriter("logs.csv", True) 'true because i wanna append
-                        writer.WriteLine(DateTime.Now.ToString("dd MMM yyyy - HH:mm:ss") & ";" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
-                        Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text)
+                        writer.WriteLine(DateTime.Now.ToString("dd MMM yyyy - HH:mm:ss") & ";" & WinVersionLabel.Text & ";" & IntIPLabel.Text & ";" & PingLabel.Text & ";" & CPUTempLabel.Text & ";" & GPUTempLabel.Text & ";" &
+                        CPUUsageLabel.Text & ";" & RAMUsageLabel.Text & ";" & UploadLabel.Text & ";" & DownloadLabel.Text)
                     End Using
                     'File.AppendAllText("logs.csv", Environment.NewLine & DateTime.Now.ToString("dd MMM yyyy - HH:mm:ss") & ";" & Label2.Text & ";" &
                     '                   Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
                     '                   Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text)
                 Catch ex As Exception
-                    ThirteenTextBox1.Text = Label1.Text & " - Could not write to logs.csv" & Environment.NewLine & ThirteenTextBox1.Text
-                    ThirteenTextBox1.Text = Label1.Text & ex.ToString & Environment.NewLine & ThirteenTextBox1.Text
+                    bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - Could not write to logs.csv" & ex.ToString & Environment.NewLine &
+                                  CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                    bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - " & ex.ToString & Environment.NewLine &
+                                  CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                    'LogsTextBox.Text = TimeLabel.Text & " - Could not write to logs.csv" & Environment.NewLine & LogsTextBox.Text
+                    'LogsTextBox.Text = TimeLabel.Text & ex.ToString & Environment.NewLine & LogsTextBox.Text
                 End Try
             End If
         End SyncLock
 
     End Sub
     Private Sub WarningLogs()
-        Dim CPUTemp As Integer = Num(Label9.Text)
-        If (ThirteenCheckBox1.Checked = True) And (CPUTemp > TrackBar1.Value) Then
-            getLog("CPU Temperature " & CPUTemp & " Celsius")
+        Dim CPUTemp As Integer = Num(CPUTempLabel.Text)
+        If (CPUTempCheckBox.Checked = True) And (CPUTemp > CInt(Invoke(New Func(Of Integer)(Function() Me.SendLogsTrackbar.Value)))) Then
+            getLog("CPU Temperature " & Num(CPUTempLabel.Text) & " Celsius")
         End If
 
-        Dim CPUUsage As Integer = Num(Label3.Text)
-        If (CPUUsage > TrackBar1.Value) Then
+        Dim CPUUsage As Integer = Num(CPUUsageLabel.Text)
+        If (CPUUsage > CInt(Invoke(New Func(Of Integer)(Function() Me.SendLogsTrackbar.Value)))) Then
             getLog("CPU Usage " & CPUUsage & "%")
         End If
 
-        Dim RAMUsage As Integer = Num(Label5.Text)
-        If (RAMUsage > TrackBar1.Value) Then
+        Dim RAMUsage As Integer = Num(RAMUsageLabel.Text)
+        If (RAMUsage > CInt(Invoke(New Func(Of Integer)(Function() Me.SendLogsTrackbar.Value)))) Then
             getLog("RAM Usage " & RAMUsage & "%")
         End If
 
-        Dim GPUTemp As Integer = Num(Label14.Text)
-        If (GPUTemp > TrackBar1.Value) Then
+        Dim GPUTemp As Integer = Num(GPUTempLabel.Text)
+        If (GPUTemp > CInt(Invoke(New Func(Of Integer)(Function() Me.SendLogsTrackbar.Value)))) Then
             getLog("GPU Temperature " & GPUTemp & " Celsius")
         End If
     End Sub
@@ -289,8 +308,8 @@ Public Class Form1
 
 
         Using client As HttpClient = New HttpClient
-            Dim uri As New Uri(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
-                   Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text & ";" & "Last Update: " & Label1.Text &
+            Dim uri As New Uri(WebserverTextBox.Text & "api.php?Info=" & WinVersionLabel.Text & ";" & IntIPLabel.Text & ";" & PingLabel.Text & ";" & CPUTempLabel.Text & ";" & GPUTempLabel.Text & ";" &
+                   CPUUsageLabel.Text & ";" & RAMUsageLabel.Text & ";" & UploadLabel.Text & ";" & DownloadLabel.Text & ";" & "Last Update: " & TimeLabel.Text &
                    "&Log=")
             Using response As HttpResponseMessage = Await client.GetAsync(uri)
                 Using content As HttpContent = response.Content
@@ -307,35 +326,44 @@ Public Class Form1
         'wc.Stop()
     End Function
     Private Async Sub getLog(ByVal log As String)
-        If ThirteenTextBox1.Text = "" Then
-            ThirteenTextBox1.Text = Label1.Text & " - " & log
+        If CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))) = "" Then
+            bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - " & log)
+
+            'LogsTextBox.Text = TimeLabel.Text & " - " & log
         Else
-            ThirteenTextBox1.Text = Label1.Text & " - " & log & Environment.NewLine & ThirteenTextBox1.Text
+            bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - " & log & Environment.NewLine & CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+            'LogsTextBox.Text = TimeLabel.Text & " - " & log & Environment.NewLine & LogsTextBox.Text
         End If
 
 
         'SAVE INTO WARNINGS.CSV FILE ONLY WARNING LOGS
         SyncLock lockWarnings
-            If ThirteenCheckBox4.Checked = True Then
+            If LocalCSVCheckBox.Checked = True Then
                 Try
                     Using writer As New StreamWriter("warnings.csv", True) 'true because i wanna append
                         writer.WriteLine(DateTime.Now.ToString("dd MMM yyyy - HH:mm:ss") & ";" & log)
                     End Using
                     'File.AppendAllText("warnings.csv", Environment.NewLine & DateTime.Now.ToString("dd MMM yyyy - HH:mm:ss") & ";" & log)
                 Catch
-                    ThirteenTextBox1.Text = Label1.Text & " - Could not write to warnings.csv" & Environment.NewLine & ThirteenTextBox1.Text
+                    bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - Could not write to warnings.csv" & Environment.NewLine & CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                    'LogsTextBox.Text = TimeLabel.Text & " - Could not write to warnings.csv" & Environment.NewLine & LogsTextBox.Text
                 End Try
             End If
         End SyncLock
 
 
         'SEND WARNING LOGS TO WEBSERVER
-        If ThirteenCheckBox3.Checked = True Then
+        If WebserverCheckBox.Checked = True Then
             Try
                 Using client As HttpClient = New HttpClient
-                    Dim uri As New Uri(ThirteenTextBox2.Text & "api.php?Info=" & Label2.Text & ";" & Label6.Text & ";" & Label4.Text & ";" & Label9.Text & ";" & Label14.Text & ";" &
-                   Label3.Text & ";" & Label5.Text & ";" & Label7.Text & ";" & Label8.Text & ";" & "Last Update: " & Label1.Text &
-                   "&Log=" & Label1.Text & " - " & log)
+                    Dim uri As New Uri(WebserverTextBox.Text & "api.php?Info=" & WinVersionLabel.Text & ";" & IntIPLabel.Text & ";" & PingLabel.Text & ";" & CPUTempLabel.Text & ";" & GPUTempLabel.Text & ";" &
+                   CPUUsageLabel.Text & ";" & RAMUsageLabel.Text & ";" & UploadLabel.Text & ";" & DownloadLabel.Text & ";" & "Last Update: " & TimeLabel.Text &
+                   "&Log=" & TimeLabel.Text & " - " & log)
                     Using response As HttpResponseMessage = Await client.GetAsync(uri)
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
@@ -347,15 +375,21 @@ Public Class Form1
                 End Using
 
             Catch ex As Exception
-                ThirteenTextBox1.Text = Label1.Text & " - Could not communicate with the webserver for api with logs" & Environment.NewLine & ThirteenTextBox1.Text
-                ThirteenTextBox1.Text = Label1.Text & " - " & ex.ToString & Environment.NewLine & ThirteenTextBox1.Text
+                bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - Could not communicate with the webserver for api with logs" & Environment.NewLine & CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - " & ex.ToString & Environment.NewLine & CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                'LogsTextBox.Text = TimeLabel.Text & " - Could not communicate with the webserver for api with logs" & Environment.NewLine & LogsTextBox.Text
+                'LogsTextBox.Text = TimeLabel.Text & " - " & ex.ToString & Environment.NewLine & LogsTextBox.Text
             End Try
         End If
 
-        If sendTelegramWarnings = True And ThirteenCheckBox8.Checked = True Then
+        If sendTelegramWarnings = True And TelegramAlertCheckBox.Checked = True Then
             Try
                 Using client As HttpClient = New HttpClient
-                    Dim uri As New Uri(ThirteenTextBox2.Text & "api-telegram.php?Log=" & log)
+                    Dim uri As New Uri(WebserverTextBox.Text & "api-telegram.php?Log=" & log)
                     Using response As HttpResponseMessage = Await client.GetAsync(uri)
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
@@ -367,8 +401,14 @@ Public Class Form1
                 End Using
 
             Catch ex As Exception
-                ThirteenTextBox1.Text = Label1.Text & " - Could not communicate with the Telegram Server" & Environment.NewLine & ThirteenTextBox1.Text
-                ThirteenTextBox1.Text = Label1.Text & " - " & ex.ToString & Environment.NewLine & ThirteenTextBox1.Text
+                bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - Could not communicate with the Telegram Server" & Environment.NewLine & CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                bypassCrossThread(LogsTextBox, CStr(Invoke(New Func(Of String)(Function() Me.TimeLabel.Text))) &
+                                  " - " & ex.ToString & Environment.NewLine & CStr(Invoke(New Func(Of String)(Function() Me.LogsTextBox.Text))))
+
+                'LogsTextBox.Text = TimeLabel.Text & " - Could not communicate with the Telegram Server" & Environment.NewLine & LogsTextBox.Text
+                'LogsTextBox.Text = TimeLabel.Text & " - " & ex.ToString & Environment.NewLine & LogsTextBox.Text
             End Try
             sendTelegramWarnings = False
         End If
@@ -377,56 +417,56 @@ Public Class Form1
     Private Sub StartButton()
         'Timer2.Interval = NumericUpDown2.Value * 1000
         'Timer2.Start()
-        twoTimer.Interval = NumericUpDown2.Value * 1000
+        twoTimer.Interval = RefreshEveryUpDownNumeric.Value * 1000
         twoTimer.Enabled = True
 
-        ThirteenButton3.Enabled = False
-        ThirteenButton4.Enabled = True
-        ThirteenButton6.Enabled = False
+        StartMonitorButton.Enabled = False
+        StopButton.Enabled = True
+        ResetButton.Enabled = False
         saveConfig() 'saves configs into config.ini
     End Sub
-    Private Sub ThirteenButton3_Click(sender As Object, e As EventArgs) Handles ThirteenButton3.Click
+    Private Sub StartMonitorButton_Click(sender As Object, e As EventArgs) Handles StartMonitorButton.Click
         StartButton()
     End Sub
 
-    Private Sub ThirteenButton4_Click(sender As Object, e As EventArgs) Handles ThirteenButton4.Click
+    Private Sub StopButton_Click(sender As Object, e As EventArgs) Handles StopButton.Click
         'Timer2.Stop()
         twoTimer.Enabled = False
-        ThirteenButton3.Enabled = True
-        ThirteenButton4.Enabled = False
-        ThirteenButton6.Enabled = True
+        StartMonitorButton.Enabled = True
+        StopButton.Enabled = False
+        ResetButton.Enabled = True
     End Sub
-    Private Sub TrackBar1_Scroll(sender As Object, e As EventArgs) Handles TrackBar1.Scroll
-        Label11.Text = "CPU Temp. " & TrackBar1.Value & " °C"
-        Label15.Text = "GPU Temp. " & TrackBar1.Value & " °C"
-        Label12.Text = "CPU Usage " & TrackBar1.Value & "%"
-        Label13.Text = "RAM Usage " & TrackBar1.Value & "%"
-    End Sub
-
-    Private Sub ThirteenButton5_Click(sender As Object, e As EventArgs) Handles ThirteenButton5.Click
-        ThirteenTextBox1.Text = ""
+    Private Sub SendLogsTrackbar_Scroll(sender As Object, e As EventArgs) Handles SendLogsTrackbar.Scroll
+        SendLogsCPUTempLabel.Text = "CPU Temp. " & SendLogsTrackbar.Value & " °C"
+        SendLogsGPUTempLabel.Text = "GPU Temp. " & SendLogsTrackbar.Value & " °C"
+        SendLogsCPUUsageLabel.Text = "CPU Usage " & SendLogsTrackbar.Value & "%"
+        SendLogsRAMUsageLabel.Text = "RAM Usage " & SendLogsTrackbar.Value & "%"
     End Sub
 
-    Private Sub ThirteenButton6_Click(sender As Object, e As EventArgs) Handles ThirteenButton6.Click
+    Private Sub ClearLogsButton_Click(sender As Object, e As EventArgs) Handles ClearLogsButton.Click
+        LogsTextBox.Text = ""
+    End Sub
+
+    Private Sub ResetButton_Click(sender As Object, e As EventArgs) Handles ResetButton.Click
         resetConfig()
-        Label11.Text = "CPU Temp. " & TrackBar1.Value & " °C"
-        Label15.Text = "GPU Temp. " & TrackBar1.Value & " °C"
-        Label12.Text = "CPU Usage " & TrackBar1.Value & "%"
-        Label13.Text = "RAM Usage " & TrackBar1.Value & "%"
+        SendLogsCPUTempLabel.Text = "CPU Temp. " & SendLogsTrackbar.Value & " °C"
+        SendLogsGPUTempLabel.Text = "GPU Temp. " & SendLogsTrackbar.Value & " °C"
+        SendLogsCPUUsageLabel.Text = "CPU Usage " & SendLogsTrackbar.Value & "%"
+        SendLogsRAMUsageLabel.Text = "RAM Usage " & SendLogsTrackbar.Value & "%"
     End Sub
     Private Sub resetConfig()
-        TrackBar1.Value = 80
-        ThirteenTextBox2.Text = ""
-        ThirteenCheckBox1.Checked = True
-        ThirteenCheckBox2.Checked = True
-        ThirteenCheckBox3.Checked = True
-        ThirteenCheckBox4.Checked = True
-        ThirteenCheckBox5.Checked = True
-        ThirteenCheckBox6.Checked = False
-        ThirteenCheckBox7.Checked = False
-        ThirteenCheckBox8.Checked = False
-        NumericUpDown1.Value = 1
-        NumericUpDown2.Value = 1
+        SendLogsTrackbar.Value = 80
+        WebserverTextBox.Text = ""
+        CPUTempCheckBox.Checked = True
+        NetworkStatsCheckBox.Checked = True
+        WebserverCheckBox.Checked = True
+        LocalCSVCheckBox.Checked = True
+        GPUTempCheckBox.Checked = True
+        TopMostCheckBox.Checked = False
+        AutoRestartCheckBox.Checked = False
+        TelegramAlertCheckBox.Checked = False
+        AutoRestartMinutesUpDownNumeric.Value = 1
+        RefreshEveryUpDownNumeric.Value = 1
         saveConfig()
     End Sub
 
@@ -436,8 +476,8 @@ Public Class Form1
             fs.Close()
         End If
 
-        Dim trackbarvalue As String = TrackBar1.Value
-        Dim webserver As String = ThirteenTextBox2.Text
+        Dim trackbarvalue As String = SendLogsTrackbar.Value
+        Dim webserver As String = WebserverTextBox.Text
         Dim cputemp As String
         Dim network As String
         Dim sendlogswebserver As String
@@ -446,45 +486,45 @@ Public Class Form1
         Dim topmost As String
         Dim restart As String
         Dim telegram As String
-        Dim restarttime As String = NumericUpDown1.Value
-        Dim refreshdata As String = NumericUpDown2.Value
+        Dim restarttime As String = AutoRestartMinutesUpDownNumeric.Value
+        Dim refreshdata As String = RefreshEveryUpDownNumeric.Value
 
-        If ThirteenCheckBox1.Checked = True Then
+        If CPUTempCheckBox.Checked = True Then
             cputemp = "1"
         Else
             cputemp = "0"
         End If
-        If ThirteenCheckBox2.Checked = True Then
+        If NetworkStatsCheckBox.Checked = True Then
             network = "1"
         Else
             network = "0"
         End If
-        If ThirteenCheckBox3.Checked = True Then
+        If WebserverCheckBox.Checked = True Then
             sendlogswebserver = "1"
         Else
             sendlogswebserver = "0"
         End If
-        If ThirteenCheckBox4.Checked = True Then
+        If LocalCSVCheckBox.Checked = True Then
             savelocal = "1"
         Else
             savelocal = "0"
         End If
-        If ThirteenCheckBox5.Checked = True Then
+        If GPUTempCheckBox.Checked = True Then
             gputemp = "1"
         Else
             gputemp = "0"
         End If
-        If ThirteenCheckBox6.Checked = True Then
+        If TopMostCheckBox.Checked = True Then
             topmost = "1"
         Else
             topmost = "0"
         End If
-        If ThirteenCheckBox7.Checked = True Then
+        If AutoRestartCheckBox.Checked = True Then
             restart = "1"
         Else
             restart = "0"
         End If
-        If ThirteenCheckBox8.Checked = True Then
+        If TelegramAlertCheckBox.Checked = True Then
             telegram = "1"
         Else
             telegram = "0"
@@ -496,7 +536,7 @@ Public Class Form1
                              "~" & gputemp & "~" & topmost & "~" & restart & "~" & restarttime & "~" & telegram & "~" & refreshdata)
             End Using
         Catch
-            ThirteenTextBox1.Text = Label1.Text & " - Could not update config.ini" & Environment.NewLine & ThirteenTextBox1.Text
+            LogsTextBox.Text = TimeLabel.Text & " - Could not update config.ini" & Environment.NewLine & LogsTextBox.Text
         End Try
 
     End Sub
@@ -511,65 +551,65 @@ Public Class Form1
         Dim strArr() As String
         Dim reader As String = My.Computer.FileSystem.ReadAllText("config.ini")
         strArr = reader.Split("~")
-        TrackBar1.Value = strArr(0)
-        ThirteenTextBox2.Text = strArr(1)
+        SendLogsTrackbar.Value = strArr(0)
+        WebserverTextBox.Text = strArr(1)
         If strArr(2) = "1" Then
-            ThirteenCheckBox1.Checked = True
+            CPUTempCheckBox.Checked = True
         Else
-            ThirteenCheckBox1.Checked = False
+            CPUTempCheckBox.Checked = False
         End If
         If strArr(3) = "1" Then
-            ThirteenCheckBox2.Checked = True
+            NetworkStatsCheckBox.Checked = True
         Else
-            ThirteenCheckBox2.Checked = False
+            NetworkStatsCheckBox.Checked = False
         End If
         If strArr(4) = "1" Then
-            ThirteenCheckBox3.Checked = True
+            WebserverCheckBox.Checked = True
         Else
-            ThirteenCheckBox3.Checked = False
+            WebserverCheckBox.Checked = False
         End If
         If strArr(5) = "1" Then
-            ThirteenCheckBox4.Checked = True
+            LocalCSVCheckBox.Checked = True
         Else
-            ThirteenCheckBox4.Checked = False
+            LocalCSVCheckBox.Checked = False
         End If
         If strArr(6) = "1" Then
-            ThirteenCheckBox5.Checked = True
+            GPUTempCheckBox.Checked = True
         Else
-            ThirteenCheckBox5.Checked = False
+            GPUTempCheckBox.Checked = False
         End If
         If strArr(7) = "1" Then
-            ThirteenCheckBox6.Checked = True
+            TopMostCheckBox.Checked = True
         Else
-            ThirteenCheckBox6.Checked = False
+            TopMostCheckBox.Checked = False
         End If
         If strArr(8) = "1" Then
-            ThirteenCheckBox7.Checked = True
+            AutoRestartCheckBox.Checked = True
         Else
-            ThirteenCheckBox7.Checked = False
+            AutoRestartCheckBox.Checked = False
         End If
-        NumericUpDown1.Value = strArr(9)
+        AutoRestartMinutesUpDownNumeric.Value = strArr(9)
         If strArr(10) = "1" Then
-            ThirteenCheckBox8.Checked = True
+            TelegramAlertCheckBox.Checked = True
         Else
-            ThirteenCheckBox8.Checked = False
+            TelegramAlertCheckBox.Checked = False
         End If
-        NumericUpDown2.Value = strArr(11)
+        RefreshEveryUpDownNumeric.Value = strArr(11)
 
 
         'setting max values for logs
-        Label11.Text = "CPU Temp. " & TrackBar1.Value & " °C"
-        Label15.Text = "GPU Temp. " & TrackBar1.Value & " °C"
-        Label12.Text = "CPU Usage " & TrackBar1.Value & "%"
-        Label13.Text = "RAM Usage " & TrackBar1.Value & "%"
+        SendLogsCPUTempLabel.Text = "CPU Temp. " & SendLogsTrackbar.Value & " °C"
+        SendLogsGPUTempLabel.Text = "GPU Temp. " & SendLogsTrackbar.Value & " °C"
+        SendLogsCPUUsageLabel.Text = "CPU Usage " & SendLogsTrackbar.Value & "%"
+        SendLogsRAMUsageLabel.Text = "RAM Usage " & SendLogsTrackbar.Value & "%"
     End Sub
 
     Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
         Me.WindowState = FormWindowState.Normal
     End Sub
 
-    Private Sub ThirteenCheckBox6_CheckedChanged(sender As Object) Handles ThirteenCheckBox6.CheckedChanged
-        If ThirteenCheckBox6.Checked = True Then
+    Private Sub TopMostCheckBox_CheckedChanged(sender As Object) Handles TopMostCheckBox.CheckedChanged
+        If TopMostCheckBox.Checked = True Then
             TopMost = True
         Else
             TopMost = False
@@ -578,160 +618,181 @@ Public Class Form1
 
 
 #Region "Old Code"
-    Private Async Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
-        Try
-            getCPU()
-            Label3.Text = GlobalVariables.CPUusage
-        Catch
-            getLog("Failed to get CPU usage")
-        End Try
+    'Private Async Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+    '    Try
+    '        getCPU()
+    '        CPUUsageLabel.Text = GlobalVariables.CPUusage
+    '    Catch
+    '        getLog("Failed to get CPU usage")
+    '    End Try
 
-        If ThirteenCheckBox2.Checked = True Then
-            getPing()
-            Label4.Text = GlobalVariables.PingResult
-        Else
-            Label4.Text = "Ping: Disabled"
-        End If
+    '    If NetworkStatsCheckBox.Checked = True Then
+    '        getPing()
+    '        PingLabel.Text = GlobalVariables.PingResult
+    '    Else
+    '        PingLabel.Text = "Ping: Disabled"
+    '    End If
 
-        Try
-            Label5.Text = getRAM()
-        Catch
-            getLog("Failed to get RAM usage")
-        End Try
+    '    Try
+    '        RAMUsageLabel.Text = getRAM()
+    '    Catch
+    '        getLog("Failed to get RAM usage")
+    '    End Try
 
-        If ThirteenCheckBox2.Checked = True Then
-            Try
-                getNetwork()
-                Label7.Text = GlobalVariables.upload
-                Label8.Text = GlobalVariables.download
-            Catch
-                getLog("Failed to get Network usage")
-            End Try
-        Else
-            Label7.Text = "Upload: Disabled"
-            Label8.Text = "Download: Disabled"
-        End If
+    '    If NetworkStatsCheckBox.Checked = True Then
+    '        Try
+    '            getNetwork()
+    '            UploadLabel.Text = GlobalVariables.upload
+    '            DownloadLabel.Text = GlobalVariables.download
+    '        Catch
+    '            getLog("Failed to get Network usage")
+    '        End Try
+    '    Else
+    '        UploadLabel.Text = "Upload: Disabled"
+    '        DownloadLabel.Text = "Download: Disabled"
+    '    End If
 
-        If ThirteenCheckBox1.Checked = True Then
-            Try
-                getCPUTemp()
-                Label9.Text = GlobalVariables.CPUTemp
-            Catch ex As Exception
-                getLog("Failed to get CPU Temperature")
-                getLog(ex.ToString)
-            End Try
-        Else
-            Label9.Text = "CPU: Disabled"
-        End If
+    '    If CPUTempCheckBox.Checked = True Then
+    '        Try
+    '            getCPUTemp()
+    '            CPUTempLabel.Text = GlobalVariables.CPUTemp
+    '        Catch ex As Exception
+    '            getLog("Failed to get CPU Temperature")
+    '            getLog(ex.ToString)
+    '        End Try
+    '    Else
+    '        CPUTempLabel.Text = "CPU: Disabled"
+    '    End If
 
-        If ThirteenCheckBox5.Checked = True Then
-            Try
-                getGPUTemp()
-                Label14.Text = GlobalVariables.GPUTemp
-            Catch ex As Exception
-                getLog("Failed to get GPU Temperature")
-                getLog(ex.ToString)
-            End Try
-        Else
-            Label14.Text = "GPU: Disabled"
-        End If
+    '    If GPUTempCheckBox.Checked = True Then
+    '        Try
+    '            getGPUTemp()
+    '            GPUTempLabel.Text = GlobalVariables.GPUTemp
+    '        Catch ex As Exception
+    '            getLog("Failed to get GPU Temperature")
+    '            getLog(ex.ToString)
+    '        End Try
+    '    Else
+    '        GPUTempLabel.Text = "GPU: Disabled"
+    '    End If
 
-        Try
-            Await sendLogs()
-        Catch ex As Exception
-            getLog("Can't send logs to webserver")
-            getLog(ex.ToString)
-        End Try
-        WarningLogs() 'temperatures and usages without internet and without csv
-        saveLocal()
-    End Sub
-    Private Async Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
-        Try
-            ReleaseMemory() 'every 60sec it tries to free some ram
-        Catch
-            getLog("Error while releasing memory")
-        End Try
-
-
-        'sets again the boolean true for the telegram warnings (once every 60 sec)
-        If sendTelegramWarnings = False Then
-            sendTelegramWarnings = True
-        End If
-
-
-        'sends every 60 sec the info to the charts csv
-        If Timer2.Enabled = True And ThirteenCheckBox3.Checked = True Then
-            Try
-                Using client As HttpClient = New HttpClient
-                    Dim uri As New Uri(ThirteenTextBox2.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(Label4.Text) & "~" & Num(Label9.Text) &
-                                   "~" & Num(Label14.Text) & "~" & Num(Label3.Text) & "~" & Num(Label5.Text))
-                    Using response As HttpResponseMessage = Await client.GetAsync(uri)
-                        Using content As HttpContent = response.Content
-                            Dim result As String = Await content.ReadAsStringAsync()
-                            If result IsNot Nothing Then
-                                'Console.WriteLine(result.ToString())
-                            End If
-                        End Using
-                    End Using
-                End Using
-            Catch ex As Exception
-                ThirteenTextBox1.Text = Label1.Text & " - Could not communicate with the webserver for api-charts" & Environment.NewLine & ThirteenTextBox1.Text
-                ThirteenTextBox1.Text = Label1.Text & " - " & ex.ToString & Environment.NewLine & ThirteenTextBox1.Text
-            End Try
-        End If
-    End Sub
-    'Private Sub getCPUTemp2()
-    '    Dim cp As New Computer()
-    '    cp.Open()
-    '    cp.HDDEnabled = True
-    '    cp.FanControllerEnabled = True
-    '    cp.RAMEnabled = True
-    '    cp.GPUEnabled = True
-    '    cp.MainboardEnabled = True
-    '    cp.CPUEnabled = True
-
-    '    Dim Info As String = ""
-
-    '    For i As Integer = 0 To cp.Hardware.Count() - 1
-    '        Dim hw = cp.Hardware(i)
-
-    '        Select Case hw.HardwareType
-    '            Case HardwareType.Mainboard
-    '                TextBox1.AppendText("Motherboard" & vbCrLf)
-    '                For k = 0 To hw.SubHardware.Count - 1
-    '                    Dim subhardware = hw.SubHardware(k)
-    '                    TextBox1.AppendText(subhardware.Name & vbCrLf)
-    '                    For j = 0 To subhardware.Sensors.Count - 1
-    '                        Dim sensor = subhardware.Sensors(j)
-    '                        TextBox1.AppendText(sensor.SensorType & " - " & sensor.Name & " - " & sensor.Value & vbCrLf)
-    '                    Next
-    '                Next
-    '            Case HardwareType.CPU
-    '                TextBox1.AppendText("CPU" & vbCrLf)
-    '                For j = 0 To hw.Sensors.Count - 1
-    '                    Dim sensor = hw.Sensors(j)
-    '                    TextBox1.AppendText(sensor.SensorType & " - " & sensor.Name & " - " & sensor.Value & vbCrLf)
-    '                Next
-    '            Case HardwareType.RAM
-    '                TextBox1.AppendText("RAM" & vbCrLf)
-    '                For j = 0 To hw.Sensors.Count - 1
-    '                    Dim sensor = hw.Sensors(j)
-    '                    TextBox1.AppendText(sensor.SensorType & " - " & sensor.Name & " - " & sensor.Value & vbCrLf)
-    '                Next
-    '        End Select
-    '    Next
+    '    Try
+    '        Await sendLogs()
+    '    Catch ex As Exception
+    '        getLog("Can't send logs to webserver")
+    '        getLog(ex.ToString)
+    '    End Try
+    '    WarningLogs() 'temperatures and usages without internet and without csv
+    '    saveLocal()
     'End Sub
-    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
-        Label1.Text = DateTime.Now.ToString("dd MMM yyyy HH:mm:ss")
-        If ThirteenCheckBox6.Checked = True Then
-            TopMost = True
-        Else
-            TopMost = False
-        End If
+    'Private Async Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+    '    Try
+    '        ReleaseMemory() 'every 60sec it tries to free some ram
+    '    Catch
+    '        getLog("Error while releasing memory")
+    '    End Try
 
-        If ThirteenCheckBox7.Checked = True Then
-            SetAutoRun()
-        End If
-    End Sub
+
+    '    'sets again the boolean true for the telegram warnings (once every 60 sec)
+    '    If sendTelegramWarnings = False Then
+    '        sendTelegramWarnings = True
+    '    End If
+
+
+    '    'sends every 60 sec the info to the charts csv
+    '    If Timer2.Enabled = True And WebserverCheckBox.Checked = True Then
+    '        Try
+    '            Using client As HttpClient = New HttpClient
+    '                Dim uri As New Uri(WebserverTextBox.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(PingLabel.Text) & "~" & Num(CPUTempLabel.Text) &
+    '                               "~" & Num(GPUTempLabel.Text) & "~" & Num(CPUUsageLabel.Text) & "~" & Num(RAMUsageLabel.Text))
+    '                Using response As HttpResponseMessage = Await client.GetAsync(uri)
+    '                    Using content As HttpContent = response.Content
+    '                        Dim result As String = Await content.ReadAsStringAsync()
+    '                        If result IsNot Nothing Then
+    '                            'Console.WriteLine(result.ToString())
+    '                        End If
+    '                    End Using
+    '                End Using
+    '            End Using
+    '        Catch ex As Exception
+    '            LogsTextBox.Text = TimeLabel.Text & " - Could not communicate with the webserver for api-charts" & Environment.NewLine & LogsTextBox.Text
+    '            LogsTextBox.Text = TimeLabel.Text & " - " & ex.ToString & Environment.NewLine & LogsTextBox.Text
+    '        End Try
+    '    End If
+    'End Sub
+    ''Private Sub getCPUTemp2()
+    ''    Dim cp As New Computer()
+    ''    cp.Open()
+    ''    cp.HDDEnabled = True
+    ''    cp.FanControllerEnabled = True
+    ''    cp.RAMEnabled = True
+    ''    cp.GPUEnabled = True
+    ''    cp.MainboardEnabled = True
+    ''    cp.CPUEnabled = True
+
+    ''    Dim Info As String = ""
+
+    ''    For i As Integer = 0 To cp.Hardware.Count() - 1
+    ''        Dim hw = cp.Hardware(i)
+
+    ''        Select Case hw.HardwareType
+    ''            Case HardwareType.Mainboard
+    ''                TextBox1.AppendText("Motherboard" & vbCrLf)
+    ''                For k = 0 To hw.SubHardware.Count - 1
+    ''                    Dim subhardware = hw.SubHardware(k)
+    ''                    TextBox1.AppendText(subhardware.Name & vbCrLf)
+    ''                    For j = 0 To subhardware.Sensors.Count - 1
+    ''                        Dim sensor = subhardware.Sensors(j)
+    ''                        TextBox1.AppendText(sensor.SensorType & " - " & sensor.Name & " - " & sensor.Value & vbCrLf)
+    ''                    Next
+    ''                Next
+    ''            Case HardwareType.CPU
+    ''                TextBox1.AppendText("CPU" & vbCrLf)
+    ''                For j = 0 To hw.Sensors.Count - 1
+    ''                    Dim sensor = hw.Sensors(j)
+    ''                    TextBox1.AppendText(sensor.SensorType & " - " & sensor.Name & " - " & sensor.Value & vbCrLf)
+    ''                Next
+    ''            Case HardwareType.RAM
+    ''                TextBox1.AppendText("RAM" & vbCrLf)
+    ''                For j = 0 To hw.Sensors.Count - 1
+    ''                    Dim sensor = hw.Sensors(j)
+    ''                    TextBox1.AppendText(sensor.SensorType & " - " & sensor.Name & " - " & sensor.Value & vbCrLf)
+    ''                Next
+    ''        End Select
+    ''    Next
+    ''End Sub
+    'Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+    '    TimeLabel.Text = DateTime.Now.ToString("dd MMM yyyy HH:mm:ss")
+    '    If TopMostCheckBox.Checked = True Then
+    '        TopMost = True
+    '    Else
+    '        TopMost = False
+    '    End If
+
+    '    If AutoRestartCheckBox.Checked = True Then
+    '        SetAutoRun()
+    '    End If
+    'End Sub
+    'Private Sub WarningLogs2()
+    '    Dim CPUTemp As Integer = Num(CPUTempLabel.Text)
+    '    If (CPUTempCheckBox.Checked = True) And (CPUTemp > SendLogsTrackbar.Value) Then
+    '        getLog("CPU Temperature " & CPUTemp & " Celsius")
+    '    End If
+
+    '    Dim CPUUsage As Integer = Num(CPUUsageLabel.Text)
+    '    If (CPUUsage > SendLogsTrackbar.Value) Then
+    '        getLog("CPU Usage " & CPUUsage & "%")
+    '    End If
+
+    '    Dim RAMUsage As Integer = Num(RAMUsageLabel.Text)
+    '    If (RAMUsage > SendLogsTrackbar.Value) Then
+    '        getLog("RAM Usage " & RAMUsage & "%")
+    '    End If
+
+    '    Dim GPUTemp As Integer = Num(GPUTempLabel.Text)
+    '    If (GPUTemp > SendLogsTrackbar.Value) Then
+    '        getLog("GPU Temperature " & GPUTemp & " Celsius")
+    '    End If
+    'End Sub
 #End Region
 End Class

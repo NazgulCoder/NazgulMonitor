@@ -28,50 +28,50 @@ Partial Class Form1
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
+        Me.MinimizeButton = New NazgulMonitor.ThirteenButton()
+        Me.CloseButton = New NazgulMonitor.ThirteenButton()
+        Me.TimeLabel = New System.Windows.Forms.Label()
+        Me.WinVersionLabel = New System.Windows.Forms.Label()
+        Me.CPUUsageLabel = New System.Windows.Forms.Label()
+        Me.PingLabel = New System.Windows.Forms.Label()
+        Me.RAMUsageLabel = New System.Windows.Forms.Label()
+        Me.UploadLabel = New System.Windows.Forms.Label()
+        Me.DownloadLabel = New System.Windows.Forms.Label()
+        Me.CPUTempLabel = New System.Windows.Forms.Label()
+        Me.CPUTempCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.SeparatorImage = New System.Windows.Forms.PictureBox()
+        Me.StartMonitorButton = New NazgulMonitor.ThirteenButton()
+        Me.StopButton = New NazgulMonitor.ThirteenButton()
+        Me.LogsTextBox = New NazgulMonitor.ThirteenTextBox()
+        Me.NetworkStatsCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.WebserverCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.IntIPLabel = New System.Windows.Forms.Label()
+        Me.SendLogsTrackbar = New System.Windows.Forms.TrackBar()
+        Me.LocalCSVCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.WebserverTextBox = New NazgulMonitor.ThirteenTextBox()
+        Me.SendLogsLabel = New System.Windows.Forms.Label()
+        Me.SendLogsCPUTempLabel = New System.Windows.Forms.Label()
+        Me.SendLogsCPUUsageLabel = New System.Windows.Forms.Label()
+        Me.SendLogsRAMUsageLabel = New System.Windows.Forms.Label()
+        Me.GPUTempLabel = New System.Windows.Forms.Label()
+        Me.SendLogsGPUTempLabel = New System.Windows.Forms.Label()
+        Me.GPUTempCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.ClearLogsButton = New NazgulMonitor.ThirteenButton()
+        Me.TopMostCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.ResetButton = New NazgulMonitor.ThirteenButton()
+        Me.AutoRestartCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.AutoRestartMinutesUpDownNumeric = New System.Windows.Forms.NumericUpDown()
+        Me.afterMinutesLabel = New System.Windows.Forms.Label()
+        Me.TelegramAlertCheckBox = New NazgulMonitor.ThirteenCheckBox()
+        Me.RefreshEveryUpDownNumeric = New System.Windows.Forms.NumericUpDown()
+        Me.secondsLabel = New System.Windows.Forms.Label()
+        Me.refreshLabel = New System.Windows.Forms.Label()
         Me.ThirteenForm1 = New NazgulMonitor.ThirteenForm()
-        Me.Label18 = New System.Windows.Forms.Label()
-        Me.Label17 = New System.Windows.Forms.Label()
-        Me.NumericUpDown2 = New System.Windows.Forms.NumericUpDown()
-        Me.ThirteenCheckBox8 = New NazgulMonitor.ThirteenCheckBox()
-        Me.Label16 = New System.Windows.Forms.Label()
-        Me.NumericUpDown1 = New System.Windows.Forms.NumericUpDown()
-        Me.ThirteenCheckBox7 = New NazgulMonitor.ThirteenCheckBox()
-        Me.ThirteenButton6 = New NazgulMonitor.ThirteenButton()
-        Me.ThirteenCheckBox6 = New NazgulMonitor.ThirteenCheckBox()
-        Me.ThirteenButton5 = New NazgulMonitor.ThirteenButton()
-        Me.ThirteenCheckBox5 = New NazgulMonitor.ThirteenCheckBox()
-        Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label13 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.ThirteenTextBox2 = New NazgulMonitor.ThirteenTextBox()
-        Me.ThirteenCheckBox4 = New NazgulMonitor.ThirteenCheckBox()
-        Me.TrackBar1 = New System.Windows.Forms.TrackBar()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.ThirteenCheckBox3 = New NazgulMonitor.ThirteenCheckBox()
-        Me.ThirteenCheckBox2 = New NazgulMonitor.ThirteenCheckBox()
-        Me.ThirteenTextBox1 = New NazgulMonitor.ThirteenTextBox()
-        Me.ThirteenButton4 = New NazgulMonitor.ThirteenButton()
-        Me.ThirteenButton3 = New NazgulMonitor.ThirteenButton()
-        Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ThirteenCheckBox1 = New NazgulMonitor.ThirteenCheckBox()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
-        Me.Label4 = New System.Windows.Forms.Label()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.Label1 = New System.Windows.Forms.Label()
-        Me.ThirteenButton2 = New NazgulMonitor.ThirteenButton()
-        Me.ThirteenButton1 = New NazgulMonitor.ThirteenButton()
+        CType(Me.SeparatorImage, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.SendLogsTrackbar, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.AutoRestartMinutesUpDownNumeric, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.RefreshEveryUpDownNumeric, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.ThirteenForm1.SuspendLayout()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Timer1
@@ -92,49 +92,470 @@ Partial Class Form1
         Me.NotifyIcon1.Text = "NotifyIcon1"
         Me.NotifyIcon1.Visible = True
         '
+        'MinimizeButton
+        '
+        Me.MinimizeButton.AccentColor = System.Drawing.Color.DodgerBlue
+        Me.MinimizeButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.MinimizeButton.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
+        Me.MinimizeButton.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.MinimizeButton.ForeColor = System.Drawing.Color.White
+        Me.MinimizeButton.Location = New System.Drawing.Point(365, 3)
+        Me.MinimizeButton.Name = "MinimizeButton"
+        Me.MinimizeButton.Size = New System.Drawing.Size(20, 23)
+        Me.MinimizeButton.TabIndex = 0
+        Me.MinimizeButton.Text = "_"
+        Me.MinimizeButton.UseVisualStyleBackColor = False
+        '
+        'CloseButton
+        '
+        Me.CloseButton.AccentColor = System.Drawing.Color.DodgerBlue
+        Me.CloseButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.CloseButton.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
+        Me.CloseButton.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.CloseButton.ForeColor = System.Drawing.Color.White
+        Me.CloseButton.Location = New System.Drawing.Point(391, 3)
+        Me.CloseButton.Name = "CloseButton"
+        Me.CloseButton.Size = New System.Drawing.Size(20, 23)
+        Me.CloseButton.TabIndex = 1
+        Me.CloseButton.Text = "X"
+        Me.CloseButton.UseVisualStyleBackColor = False
+        '
+        'TimeLabel
+        '
+        Me.TimeLabel.AutoSize = True
+        Me.TimeLabel.BackColor = System.Drawing.Color.Transparent
+        Me.TimeLabel.Location = New System.Drawing.Point(3, 520)
+        Me.TimeLabel.Name = "TimeLabel"
+        Me.TimeLabel.Size = New System.Drawing.Size(36, 17)
+        Me.TimeLabel.TabIndex = 2
+        Me.TimeLabel.Text = "Time"
+        '
+        'WinVersionLabel
+        '
+        Me.WinVersionLabel.AutoSize = True
+        Me.WinVersionLabel.Location = New System.Drawing.Point(3, 35)
+        Me.WinVersionLabel.Name = "WinVersionLabel"
+        Me.WinVersionLabel.Size = New System.Drawing.Size(102, 17)
+        Me.WinVersionLabel.TabIndex = 3
+        Me.WinVersionLabel.Text = "Windows Version"
+        '
+        'CPUUsageLabel
+        '
+        Me.CPUUsageLabel.AutoSize = True
+        Me.CPUUsageLabel.Location = New System.Drawing.Point(3, 120)
+        Me.CPUUsageLabel.Name = "CPUUsageLabel"
+        Me.CPUUsageLabel.Size = New System.Drawing.Size(39, 17)
+        Me.CPUUsageLabel.TabIndex = 4
+        Me.CPUUsageLabel.Text = "CPU: "
+        '
+        'PingLabel
+        '
+        Me.PingLabel.AutoSize = True
+        Me.PingLabel.Location = New System.Drawing.Point(3, 69)
+        Me.PingLabel.Name = "PingLabel"
+        Me.PingLabel.Size = New System.Drawing.Size(39, 17)
+        Me.PingLabel.TabIndex = 5
+        Me.PingLabel.Text = "Ping: "
+        '
+        'RAMUsageLabel
+        '
+        Me.RAMUsageLabel.AutoSize = True
+        Me.RAMUsageLabel.Location = New System.Drawing.Point(3, 137)
+        Me.RAMUsageLabel.Name = "RAMUsageLabel"
+        Me.RAMUsageLabel.Size = New System.Drawing.Size(37, 17)
+        Me.RAMUsageLabel.TabIndex = 6
+        Me.RAMUsageLabel.Text = "RAM:"
+        '
+        'UploadLabel
+        '
+        Me.UploadLabel.AutoSize = True
+        Me.UploadLabel.Location = New System.Drawing.Point(3, 154)
+        Me.UploadLabel.Name = "UploadLabel"
+        Me.UploadLabel.Size = New System.Drawing.Size(55, 17)
+        Me.UploadLabel.TabIndex = 9
+        Me.UploadLabel.Text = "Upload: "
+        '
+        'DownloadLabel
+        '
+        Me.DownloadLabel.AutoSize = True
+        Me.DownloadLabel.Location = New System.Drawing.Point(3, 171)
+        Me.DownloadLabel.Name = "DownloadLabel"
+        Me.DownloadLabel.Size = New System.Drawing.Size(71, 17)
+        Me.DownloadLabel.TabIndex = 10
+        Me.DownloadLabel.Text = "Download: "
+        '
+        'CPUTempLabel
+        '
+        Me.CPUTempLabel.AutoSize = True
+        Me.CPUTempLabel.Location = New System.Drawing.Point(3, 86)
+        Me.CPUTempLabel.Name = "CPUTempLabel"
+        Me.CPUTempLabel.Size = New System.Drawing.Size(39, 17)
+        Me.CPUTempLabel.TabIndex = 11
+        Me.CPUTempLabel.Text = "CPU: "
+        '
+        'CPUTempCheckBox
+        '
+        Me.CPUTempCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.CPUTempCheckBox.Checked = True
+        Me.CPUTempCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.CPUTempCheckBox.ForeColor = System.Drawing.Color.White
+        Me.CPUTempCheckBox.Location = New System.Drawing.Point(241, 35)
+        Me.CPUTempCheckBox.Name = "CPUTempCheckBox"
+        Me.CPUTempCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.CPUTempCheckBox.Size = New System.Drawing.Size(130, 17)
+        Me.CPUTempCheckBox.TabIndex = 12
+        Me.CPUTempCheckBox.Text = "CPU Temperature"
+        '
+        'SeparatorImage
+        '
+        Me.SeparatorImage.BackColor = System.Drawing.Color.Transparent
+        Me.SeparatorImage.Image = CType(resources.GetObject("SeparatorImage.Image"), System.Drawing.Image)
+        Me.SeparatorImage.Location = New System.Drawing.Point(-79, 208)
+        Me.SeparatorImage.Name = "SeparatorImage"
+        Me.SeparatorImage.Size = New System.Drawing.Size(570, 15)
+        Me.SeparatorImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
+        Me.SeparatorImage.TabIndex = 13
+        Me.SeparatorImage.TabStop = False
+        '
+        'StartMonitorButton
+        '
+        Me.StartMonitorButton.AccentColor = System.Drawing.Color.DodgerBlue
+        Me.StartMonitorButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.StartMonitorButton.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
+        Me.StartMonitorButton.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.StartMonitorButton.ForeColor = System.Drawing.Color.White
+        Me.StartMonitorButton.Location = New System.Drawing.Point(3, 306)
+        Me.StartMonitorButton.Name = "StartMonitorButton"
+        Me.StartMonitorButton.Size = New System.Drawing.Size(75, 23)
+        Me.StartMonitorButton.TabIndex = 14
+        Me.StartMonitorButton.Text = "Start"
+        Me.StartMonitorButton.UseVisualStyleBackColor = False
+        '
+        'StopButton
+        '
+        Me.StopButton.AccentColor = System.Drawing.Color.DodgerBlue
+        Me.StopButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.StopButton.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
+        Me.StopButton.Enabled = False
+        Me.StopButton.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.StopButton.ForeColor = System.Drawing.Color.White
+        Me.StopButton.Location = New System.Drawing.Point(84, 306)
+        Me.StopButton.Name = "StopButton"
+        Me.StopButton.Size = New System.Drawing.Size(75, 23)
+        Me.StopButton.TabIndex = 15
+        Me.StopButton.Text = "Stop"
+        Me.StopButton.UseVisualStyleBackColor = False
+        '
+        'LogsTextBox
+        '
+        Me.LogsTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.LogsTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.LogsTextBox.ColorScheme = NazgulMonitor.ThirteenTextBox.ColorSchemes.Dark
+        Me.LogsTextBox.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.LogsTextBox.ForeColor = System.Drawing.Color.White
+        Me.LogsTextBox.Location = New System.Drawing.Point(3, 365)
+        Me.LogsTextBox.Multiline = True
+        Me.LogsTextBox.Name = "LogsTextBox"
+        Me.LogsTextBox.ReadOnly = True
+        Me.LogsTextBox.Size = New System.Drawing.Size(408, 149)
+        Me.LogsTextBox.TabIndex = 16
+        '
+        'NetworkStatsCheckBox
+        '
+        Me.NetworkStatsCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.NetworkStatsCheckBox.Checked = True
+        Me.NetworkStatsCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.NetworkStatsCheckBox.ForeColor = System.Drawing.Color.White
+        Me.NetworkStatsCheckBox.Location = New System.Drawing.Point(241, 81)
+        Me.NetworkStatsCheckBox.Name = "NetworkStatsCheckBox"
+        Me.NetworkStatsCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.NetworkStatsCheckBox.Size = New System.Drawing.Size(107, 17)
+        Me.NetworkStatsCheckBox.TabIndex = 17
+        Me.NetworkStatsCheckBox.Text = "Network Stats"
+        '
+        'WebserverCheckBox
+        '
+        Me.WebserverCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.WebserverCheckBox.Checked = True
+        Me.WebserverCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.WebserverCheckBox.ForeColor = System.Drawing.Color.White
+        Me.WebserverCheckBox.Location = New System.Drawing.Point(241, 104)
+        Me.WebserverCheckBox.Name = "WebserverCheckBox"
+        Me.WebserverCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.WebserverCheckBox.Size = New System.Drawing.Size(167, 17)
+        Me.WebserverCheckBox.TabIndex = 18
+        Me.WebserverCheckBox.Text = "Send Logs to Webserver"
+        '
+        'IntIPLabel
+        '
+        Me.IntIPLabel.AutoSize = True
+        Me.IntIPLabel.Location = New System.Drawing.Point(3, 52)
+        Me.IntIPLabel.Name = "IntIPLabel"
+        Me.IntIPLabel.Size = New System.Drawing.Size(64, 17)
+        Me.IntIPLabel.TabIndex = 19
+        Me.IntIPLabel.Text = "Internal IP"
+        '
+        'SendLogsTrackbar
+        '
+        Me.SendLogsTrackbar.Location = New System.Drawing.Point(165, 274)
+        Me.SendLogsTrackbar.Maximum = 100
+        Me.SendLogsTrackbar.Minimum = 25
+        Me.SendLogsTrackbar.Name = "SendLogsTrackbar"
+        Me.SendLogsTrackbar.Size = New System.Drawing.Size(246, 45)
+        Me.SendLogsTrackbar.SmallChange = 10
+        Me.SendLogsTrackbar.TabIndex = 20
+        Me.SendLogsTrackbar.TickFrequency = 5
+        Me.SendLogsTrackbar.Value = 80
+        '
+        'LocalCSVCheckBox
+        '
+        Me.LocalCSVCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.LocalCSVCheckBox.Checked = True
+        Me.LocalCSVCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.LocalCSVCheckBox.ForeColor = System.Drawing.Color.White
+        Me.LocalCSVCheckBox.Location = New System.Drawing.Point(241, 127)
+        Me.LocalCSVCheckBox.Name = "LocalCSVCheckBox"
+        Me.LocalCSVCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.LocalCSVCheckBox.Size = New System.Drawing.Size(130, 17)
+        Me.LocalCSVCheckBox.TabIndex = 21
+        Me.LocalCSVCheckBox.Text = "Save Logs to .CSV"
+        '
+        'WebserverTextBox
+        '
+        Me.WebserverTextBox.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
+        Me.WebserverTextBox.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.WebserverTextBox.ColorScheme = NazgulMonitor.ThirteenTextBox.ColorSchemes.Dark
+        Me.WebserverTextBox.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.WebserverTextBox.ForeColor = System.Drawing.Color.White
+        Me.WebserverTextBox.Location = New System.Drawing.Point(241, 173)
+        Me.WebserverTextBox.Name = "WebserverTextBox"
+        Me.WebserverTextBox.Size = New System.Drawing.Size(170, 25)
+        Me.WebserverTextBox.TabIndex = 22
+        '
+        'SendLogsLabel
+        '
+        Me.SendLogsLabel.AutoSize = True
+        Me.SendLogsLabel.Location = New System.Drawing.Point(3, 226)
+        Me.SendLogsLabel.Name = "SendLogsLabel"
+        Me.SendLogsLabel.Size = New System.Drawing.Size(99, 17)
+        Me.SendLogsLabel.TabIndex = 23
+        Me.SendLogsLabel.Text = "Send logs when:"
+        '
+        'SendLogsCPUTempLabel
+        '
+        Me.SendLogsCPUTempLabel.AutoSize = True
+        Me.SendLogsCPUTempLabel.Location = New System.Drawing.Point(108, 226)
+        Me.SendLogsCPUTempLabel.Name = "SendLogsCPUTempLabel"
+        Me.SendLogsCPUTempLabel.Size = New System.Drawing.Size(107, 17)
+        Me.SendLogsCPUTempLabel.TabIndex = 24
+        Me.SendLogsCPUTempLabel.Text = "CPU Temperature"
+        '
+        'SendLogsCPUUsageLabel
+        '
+        Me.SendLogsCPUUsageLabel.AutoSize = True
+        Me.SendLogsCPUUsageLabel.Location = New System.Drawing.Point(108, 243)
+        Me.SendLogsCPUUsageLabel.Name = "SendLogsCPUUsageLabel"
+        Me.SendLogsCPUUsageLabel.Size = New System.Drawing.Size(71, 17)
+        Me.SendLogsCPUUsageLabel.TabIndex = 25
+        Me.SendLogsCPUUsageLabel.Text = "CPU Usage"
+        '
+        'SendLogsRAMUsageLabel
+        '
+        Me.SendLogsRAMUsageLabel.AutoSize = True
+        Me.SendLogsRAMUsageLabel.Location = New System.Drawing.Point(265, 226)
+        Me.SendLogsRAMUsageLabel.Name = "SendLogsRAMUsageLabel"
+        Me.SendLogsRAMUsageLabel.Size = New System.Drawing.Size(73, 17)
+        Me.SendLogsRAMUsageLabel.TabIndex = 26
+        Me.SendLogsRAMUsageLabel.Text = "RAM Usage"
+        '
+        'GPUTempLabel
+        '
+        Me.GPUTempLabel.AutoSize = True
+        Me.GPUTempLabel.Location = New System.Drawing.Point(3, 103)
+        Me.GPUTempLabel.Name = "GPUTempLabel"
+        Me.GPUTempLabel.Size = New System.Drawing.Size(36, 17)
+        Me.GPUTempLabel.TabIndex = 27
+        Me.GPUTempLabel.Text = "GPU:"
+        '
+        'SendLogsGPUTempLabel
+        '
+        Me.SendLogsGPUTempLabel.AutoSize = True
+        Me.SendLogsGPUTempLabel.Location = New System.Drawing.Point(265, 243)
+        Me.SendLogsGPUTempLabel.Name = "SendLogsGPUTempLabel"
+        Me.SendLogsGPUTempLabel.Size = New System.Drawing.Size(108, 17)
+        Me.SendLogsGPUTempLabel.TabIndex = 28
+        Me.SendLogsGPUTempLabel.Text = "GPU Temperature"
+        '
+        'GPUTempCheckBox
+        '
+        Me.GPUTempCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.GPUTempCheckBox.Checked = True
+        Me.GPUTempCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.GPUTempCheckBox.ForeColor = System.Drawing.Color.White
+        Me.GPUTempCheckBox.Location = New System.Drawing.Point(241, 58)
+        Me.GPUTempCheckBox.Name = "GPUTempCheckBox"
+        Me.GPUTempCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.GPUTempCheckBox.Size = New System.Drawing.Size(130, 17)
+        Me.GPUTempCheckBox.TabIndex = 29
+        Me.GPUTempCheckBox.Text = "GPU Temperature"
+        '
+        'ClearLogsButton
+        '
+        Me.ClearLogsButton.AccentColor = System.Drawing.Color.DodgerBlue
+        Me.ClearLogsButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ClearLogsButton.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
+        Me.ClearLogsButton.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.ClearLogsButton.ForeColor = System.Drawing.Color.White
+        Me.ClearLogsButton.Location = New System.Drawing.Point(3, 335)
+        Me.ClearLogsButton.Name = "ClearLogsButton"
+        Me.ClearLogsButton.Size = New System.Drawing.Size(75, 23)
+        Me.ClearLogsButton.TabIndex = 30
+        Me.ClearLogsButton.Text = "Clear Logs"
+        Me.ClearLogsButton.UseVisualStyleBackColor = False
+        '
+        'TopMostCheckBox
+        '
+        Me.TopMostCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.TopMostCheckBox.Checked = False
+        Me.TopMostCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.TopMostCheckBox.ForeColor = System.Drawing.Color.White
+        Me.TopMostCheckBox.Location = New System.Drawing.Point(278, 520)
+        Me.TopMostCheckBox.Name = "TopMostCheckBox"
+        Me.TopMostCheckBox.Size = New System.Drawing.Size(133, 17)
+        Me.TopMostCheckBox.TabIndex = 31
+        Me.TopMostCheckBox.Text = "Keep me TopMost"
+        '
+        'ResetButton
+        '
+        Me.ResetButton.AccentColor = System.Drawing.Color.DodgerBlue
+        Me.ResetButton.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
+        Me.ResetButton.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
+        Me.ResetButton.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
+        Me.ResetButton.ForeColor = System.Drawing.Color.White
+        Me.ResetButton.Location = New System.Drawing.Point(84, 335)
+        Me.ResetButton.Name = "ResetButton"
+        Me.ResetButton.Size = New System.Drawing.Size(75, 23)
+        Me.ResetButton.TabIndex = 32
+        Me.ResetButton.Text = "Reset"
+        Me.ResetButton.UseVisualStyleBackColor = False
+        '
+        'AutoRestartCheckBox
+        '
+        Me.AutoRestartCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.AutoRestartCheckBox.Checked = False
+        Me.AutoRestartCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.AutoRestartCheckBox.ForeColor = System.Drawing.Color.White
+        Me.AutoRestartCheckBox.Location = New System.Drawing.Point(165, 309)
+        Me.AutoRestartCheckBox.Name = "AutoRestartCheckBox"
+        Me.AutoRestartCheckBox.Size = New System.Drawing.Size(101, 17)
+        Me.AutoRestartCheckBox.TabIndex = 33
+        Me.AutoRestartCheckBox.Text = "AutoRestart?"
+        '
+        'AutoRestartMinutesUpDownNumeric
+        '
+        Me.AutoRestartMinutesUpDownNumeric.Location = New System.Drawing.Point(265, 304)
+        Me.AutoRestartMinutesUpDownNumeric.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.AutoRestartMinutesUpDownNumeric.Name = "AutoRestartMinutesUpDownNumeric"
+        Me.AutoRestartMinutesUpDownNumeric.Size = New System.Drawing.Size(56, 25)
+        Me.AutoRestartMinutesUpDownNumeric.TabIndex = 34
+        Me.AutoRestartMinutesUpDownNumeric.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'afterMinutesLabel
+        '
+        Me.afterMinutesLabel.AutoSize = True
+        Me.afterMinutesLabel.BackColor = System.Drawing.Color.Transparent
+        Me.afterMinutesLabel.Location = New System.Drawing.Point(327, 312)
+        Me.afterMinutesLabel.Name = "afterMinutesLabel"
+        Me.afterMinutesLabel.Size = New System.Drawing.Size(82, 17)
+        Me.afterMinutesLabel.TabIndex = 35
+        Me.afterMinutesLabel.Text = "after minutes"
+        '
+        'TelegramAlertCheckBox
+        '
+        Me.TelegramAlertCheckBox.BackColor = System.Drawing.Color.Transparent
+        Me.TelegramAlertCheckBox.Checked = True
+        Me.TelegramAlertCheckBox.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
+        Me.TelegramAlertCheckBox.ForeColor = System.Drawing.Color.White
+        Me.TelegramAlertCheckBox.Location = New System.Drawing.Point(241, 150)
+        Me.TelegramAlertCheckBox.Name = "TelegramAlertCheckBox"
+        Me.TelegramAlertCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
+        Me.TelegramAlertCheckBox.Size = New System.Drawing.Size(150, 17)
+        Me.TelegramAlertCheckBox.TabIndex = 36
+        Me.TelegramAlertCheckBox.Text = "Send Telegram Alerts"
+        '
+        'RefreshEveryUpDownNumeric
+        '
+        Me.RefreshEveryUpDownNumeric.Location = New System.Drawing.Point(265, 334)
+        Me.RefreshEveryUpDownNumeric.Maximum = New Decimal(New Integer() {3600, 0, 0, 0})
+        Me.RefreshEveryUpDownNumeric.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
+        Me.RefreshEveryUpDownNumeric.Name = "RefreshEveryUpDownNumeric"
+        Me.RefreshEveryUpDownNumeric.Size = New System.Drawing.Size(56, 25)
+        Me.RefreshEveryUpDownNumeric.TabIndex = 37
+        Me.RefreshEveryUpDownNumeric.Value = New Decimal(New Integer() {1, 0, 0, 0})
+        '
+        'secondsLabel
+        '
+        Me.secondsLabel.AutoSize = True
+        Me.secondsLabel.BackColor = System.Drawing.Color.Transparent
+        Me.secondsLabel.Location = New System.Drawing.Point(327, 342)
+        Me.secondsLabel.Name = "secondsLabel"
+        Me.secondsLabel.Size = New System.Drawing.Size(52, 17)
+        Me.secondsLabel.TabIndex = 38
+        Me.secondsLabel.Text = "seconds"
+        '
+        'refreshLabel
+        '
+        Me.refreshLabel.AutoSize = True
+        Me.refreshLabel.BackColor = System.Drawing.Color.Transparent
+        Me.refreshLabel.Location = New System.Drawing.Point(175, 342)
+        Me.refreshLabel.Name = "refreshLabel"
+        Me.refreshLabel.Size = New System.Drawing.Size(84, 17)
+        Me.refreshLabel.TabIndex = 39
+        Me.refreshLabel.Text = "Refresh every"
+        '
         'ThirteenForm1
         '
         Me.ThirteenForm1.AccentColor = System.Drawing.Color.DodgerBlue
         Me.ThirteenForm1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
         Me.ThirteenForm1.ColorScheme = NazgulMonitor.ThirteenForm.ColorSchemes.Dark
-        Me.ThirteenForm1.Controls.Add(Me.Label18)
-        Me.ThirteenForm1.Controls.Add(Me.Label17)
-        Me.ThirteenForm1.Controls.Add(Me.NumericUpDown2)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox8)
-        Me.ThirteenForm1.Controls.Add(Me.Label16)
-        Me.ThirteenForm1.Controls.Add(Me.NumericUpDown1)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox7)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenButton6)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox6)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenButton5)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox5)
-        Me.ThirteenForm1.Controls.Add(Me.Label15)
-        Me.ThirteenForm1.Controls.Add(Me.Label14)
-        Me.ThirteenForm1.Controls.Add(Me.Label13)
-        Me.ThirteenForm1.Controls.Add(Me.Label12)
-        Me.ThirteenForm1.Controls.Add(Me.Label11)
-        Me.ThirteenForm1.Controls.Add(Me.Label10)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenTextBox2)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox4)
-        Me.ThirteenForm1.Controls.Add(Me.TrackBar1)
-        Me.ThirteenForm1.Controls.Add(Me.Label6)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox3)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox2)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenTextBox1)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenButton4)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenButton3)
-        Me.ThirteenForm1.Controls.Add(Me.PictureBox1)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenCheckBox1)
-        Me.ThirteenForm1.Controls.Add(Me.Label9)
-        Me.ThirteenForm1.Controls.Add(Me.Label8)
-        Me.ThirteenForm1.Controls.Add(Me.Label7)
-        Me.ThirteenForm1.Controls.Add(Me.Label5)
-        Me.ThirteenForm1.Controls.Add(Me.Label4)
-        Me.ThirteenForm1.Controls.Add(Me.Label3)
-        Me.ThirteenForm1.Controls.Add(Me.Label2)
-        Me.ThirteenForm1.Controls.Add(Me.Label1)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenButton2)
-        Me.ThirteenForm1.Controls.Add(Me.ThirteenButton1)
+        Me.ThirteenForm1.Controls.Add(Me.refreshLabel)
+        Me.ThirteenForm1.Controls.Add(Me.secondsLabel)
+        Me.ThirteenForm1.Controls.Add(Me.RefreshEveryUpDownNumeric)
+        Me.ThirteenForm1.Controls.Add(Me.TelegramAlertCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.afterMinutesLabel)
+        Me.ThirteenForm1.Controls.Add(Me.AutoRestartMinutesUpDownNumeric)
+        Me.ThirteenForm1.Controls.Add(Me.AutoRestartCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.ResetButton)
+        Me.ThirteenForm1.Controls.Add(Me.TopMostCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.ClearLogsButton)
+        Me.ThirteenForm1.Controls.Add(Me.GPUTempCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.SendLogsGPUTempLabel)
+        Me.ThirteenForm1.Controls.Add(Me.GPUTempLabel)
+        Me.ThirteenForm1.Controls.Add(Me.SendLogsRAMUsageLabel)
+        Me.ThirteenForm1.Controls.Add(Me.SendLogsCPUUsageLabel)
+        Me.ThirteenForm1.Controls.Add(Me.SendLogsCPUTempLabel)
+        Me.ThirteenForm1.Controls.Add(Me.SendLogsLabel)
+        Me.ThirteenForm1.Controls.Add(Me.WebserverTextBox)
+        Me.ThirteenForm1.Controls.Add(Me.LocalCSVCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.SendLogsTrackbar)
+        Me.ThirteenForm1.Controls.Add(Me.IntIPLabel)
+        Me.ThirteenForm1.Controls.Add(Me.WebserverCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.NetworkStatsCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.LogsTextBox)
+        Me.ThirteenForm1.Controls.Add(Me.StopButton)
+        Me.ThirteenForm1.Controls.Add(Me.StartMonitorButton)
+        Me.ThirteenForm1.Controls.Add(Me.SeparatorImage)
+        Me.ThirteenForm1.Controls.Add(Me.CPUTempCheckBox)
+        Me.ThirteenForm1.Controls.Add(Me.CPUTempLabel)
+        Me.ThirteenForm1.Controls.Add(Me.DownloadLabel)
+        Me.ThirteenForm1.Controls.Add(Me.UploadLabel)
+        Me.ThirteenForm1.Controls.Add(Me.RAMUsageLabel)
+        Me.ThirteenForm1.Controls.Add(Me.PingLabel)
+        Me.ThirteenForm1.Controls.Add(Me.CPUUsageLabel)
+        Me.ThirteenForm1.Controls.Add(Me.WinVersionLabel)
+        Me.ThirteenForm1.Controls.Add(Me.TimeLabel)
+        Me.ThirteenForm1.Controls.Add(Me.CloseButton)
+        Me.ThirteenForm1.Controls.Add(Me.MinimizeButton)
         Me.ThirteenForm1.Dock = System.Windows.Forms.DockStyle.Fill
         Me.ThirteenForm1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
         Me.ThirteenForm1.ForeColor = System.Drawing.Color.White
@@ -143,427 +564,6 @@ Partial Class Form1
         Me.ThirteenForm1.Size = New System.Drawing.Size(414, 545)
         Me.ThirteenForm1.TabIndex = 0
         Me.ThirteenForm1.Text = "NazgulMonitor"
-        '
-        'Label18
-        '
-        Me.Label18.AutoSize = True
-        Me.Label18.BackColor = System.Drawing.Color.Transparent
-        Me.Label18.Location = New System.Drawing.Point(175, 342)
-        Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(84, 17)
-        Me.Label18.TabIndex = 39
-        Me.Label18.Text = "Refresh every"
-        '
-        'Label17
-        '
-        Me.Label17.AutoSize = True
-        Me.Label17.BackColor = System.Drawing.Color.Transparent
-        Me.Label17.Location = New System.Drawing.Point(327, 342)
-        Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(52, 17)
-        Me.Label17.TabIndex = 38
-        Me.Label17.Text = "seconds"
-        '
-        'NumericUpDown2
-        '
-        Me.NumericUpDown2.Location = New System.Drawing.Point(265, 334)
-        Me.NumericUpDown2.Maximum = New Decimal(New Integer() {3600, 0, 0, 0})
-        Me.NumericUpDown2.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDown2.Name = "NumericUpDown2"
-        Me.NumericUpDown2.Size = New System.Drawing.Size(56, 25)
-        Me.NumericUpDown2.TabIndex = 37
-        Me.NumericUpDown2.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'ThirteenCheckBox8
-        '
-        Me.ThirteenCheckBox8.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox8.Checked = True
-        Me.ThirteenCheckBox8.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox8.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox8.Location = New System.Drawing.Point(241, 150)
-        Me.ThirteenCheckBox8.Name = "ThirteenCheckBox8"
-        Me.ThirteenCheckBox8.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ThirteenCheckBox8.Size = New System.Drawing.Size(136, 17)
-        Me.ThirteenCheckBox8.TabIndex = 36
-        Me.ThirteenCheckBox8.Text = "Send Telegram Alerts"
-        '
-        'Label16
-        '
-        Me.Label16.AutoSize = True
-        Me.Label16.BackColor = System.Drawing.Color.Transparent
-        Me.Label16.Location = New System.Drawing.Point(327, 312)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(82, 17)
-        Me.Label16.TabIndex = 35
-        Me.Label16.Text = "after minutes"
-        '
-        'NumericUpDown1
-        '
-        Me.NumericUpDown1.Location = New System.Drawing.Point(265, 304)
-        Me.NumericUpDown1.Minimum = New Decimal(New Integer() {1, 0, 0, 0})
-        Me.NumericUpDown1.Name = "NumericUpDown1"
-        Me.NumericUpDown1.Size = New System.Drawing.Size(56, 25)
-        Me.NumericUpDown1.TabIndex = 34
-        Me.NumericUpDown1.Value = New Decimal(New Integer() {1, 0, 0, 0})
-        '
-        'ThirteenCheckBox7
-        '
-        Me.ThirteenCheckBox7.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox7.Checked = False
-        Me.ThirteenCheckBox7.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox7.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox7.Location = New System.Drawing.Point(165, 309)
-        Me.ThirteenCheckBox7.Name = "ThirteenCheckBox7"
-        Me.ThirteenCheckBox7.Size = New System.Drawing.Size(93, 17)
-        Me.ThirteenCheckBox7.TabIndex = 33
-        Me.ThirteenCheckBox7.Text = "AutoRestart?"
-        '
-        'ThirteenButton6
-        '
-        Me.ThirteenButton6.AccentColor = System.Drawing.Color.DodgerBlue
-        Me.ThirteenButton6.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.ThirteenButton6.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
-        Me.ThirteenButton6.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenButton6.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton6.Location = New System.Drawing.Point(84, 335)
-        Me.ThirteenButton6.Name = "ThirteenButton6"
-        Me.ThirteenButton6.Size = New System.Drawing.Size(75, 23)
-        Me.ThirteenButton6.TabIndex = 32
-        Me.ThirteenButton6.Text = "Reset"
-        Me.ThirteenButton6.UseVisualStyleBackColor = False
-        '
-        'ThirteenCheckBox6
-        '
-        Me.ThirteenCheckBox6.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox6.Checked = False
-        Me.ThirteenCheckBox6.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox6.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox6.Location = New System.Drawing.Point(278, 520)
-        Me.ThirteenCheckBox6.Name = "ThirteenCheckBox6"
-        Me.ThirteenCheckBox6.Size = New System.Drawing.Size(119, 17)
-        Me.ThirteenCheckBox6.TabIndex = 31
-        Me.ThirteenCheckBox6.Text = "Keep me TopMost"
-        '
-        'ThirteenButton5
-        '
-        Me.ThirteenButton5.AccentColor = System.Drawing.Color.DodgerBlue
-        Me.ThirteenButton5.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.ThirteenButton5.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
-        Me.ThirteenButton5.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenButton5.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton5.Location = New System.Drawing.Point(3, 335)
-        Me.ThirteenButton5.Name = "ThirteenButton5"
-        Me.ThirteenButton5.Size = New System.Drawing.Size(75, 23)
-        Me.ThirteenButton5.TabIndex = 30
-        Me.ThirteenButton5.Text = "Clear Logs"
-        Me.ThirteenButton5.UseVisualStyleBackColor = False
-        '
-        'ThirteenCheckBox5
-        '
-        Me.ThirteenCheckBox5.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox5.Checked = True
-        Me.ThirteenCheckBox5.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox5.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox5.Location = New System.Drawing.Point(241, 58)
-        Me.ThirteenCheckBox5.Name = "ThirteenCheckBox5"
-        Me.ThirteenCheckBox5.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ThirteenCheckBox5.Size = New System.Drawing.Size(119, 17)
-        Me.ThirteenCheckBox5.TabIndex = 29
-        Me.ThirteenCheckBox5.Text = "GPU Temperature"
-        '
-        'Label15
-        '
-        Me.Label15.AutoSize = True
-        Me.Label15.Location = New System.Drawing.Point(265, 243)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(108, 17)
-        Me.Label15.TabIndex = 28
-        Me.Label15.Text = "GPU Temperature"
-        '
-        'Label14
-        '
-        Me.Label14.AutoSize = True
-        Me.Label14.Location = New System.Drawing.Point(3, 103)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(36, 17)
-        Me.Label14.TabIndex = 27
-        Me.Label14.Text = "GPU:"
-        '
-        'Label13
-        '
-        Me.Label13.AutoSize = True
-        Me.Label13.Location = New System.Drawing.Point(265, 226)
-        Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(73, 17)
-        Me.Label13.TabIndex = 26
-        Me.Label13.Text = "RAM Usage"
-        '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(108, 243)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(71, 17)
-        Me.Label12.TabIndex = 25
-        Me.Label12.Text = "CPU Usage"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(108, 226)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(107, 17)
-        Me.Label11.TabIndex = 24
-        Me.Label11.Text = "CPU Temperature"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(3, 226)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(99, 17)
-        Me.Label10.TabIndex = 23
-        Me.Label10.Text = "Send logs when:"
-        '
-        'ThirteenTextBox2
-        '
-        Me.ThirteenTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.ThirteenTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ThirteenTextBox2.ColorScheme = NazgulMonitor.ThirteenTextBox.ColorSchemes.Dark
-        Me.ThirteenTextBox2.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenTextBox2.ForeColor = System.Drawing.Color.White
-        Me.ThirteenTextBox2.Location = New System.Drawing.Point(241, 173)
-        Me.ThirteenTextBox2.Name = "ThirteenTextBox2"
-        Me.ThirteenTextBox2.Size = New System.Drawing.Size(170, 25)
-        Me.ThirteenTextBox2.TabIndex = 22
-        '
-        'ThirteenCheckBox4
-        '
-        Me.ThirteenCheckBox4.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox4.Checked = True
-        Me.ThirteenCheckBox4.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox4.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox4.Location = New System.Drawing.Point(241, 127)
-        Me.ThirteenCheckBox4.Name = "ThirteenCheckBox4"
-        Me.ThirteenCheckBox4.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ThirteenCheckBox4.Size = New System.Drawing.Size(122, 17)
-        Me.ThirteenCheckBox4.TabIndex = 21
-        Me.ThirteenCheckBox4.Text = "Save Logs to .CSV"
-        '
-        'TrackBar1
-        '
-        Me.TrackBar1.Location = New System.Drawing.Point(165, 274)
-        Me.TrackBar1.Maximum = 100
-        Me.TrackBar1.Minimum = 25
-        Me.TrackBar1.Name = "TrackBar1"
-        Me.TrackBar1.Size = New System.Drawing.Size(246, 45)
-        Me.TrackBar1.SmallChange = 10
-        Me.TrackBar1.TabIndex = 20
-        Me.TrackBar1.TickFrequency = 5
-        Me.TrackBar1.Value = 80
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(3, 52)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(64, 17)
-        Me.Label6.TabIndex = 19
-        Me.Label6.Text = "Internal IP"
-        '
-        'ThirteenCheckBox3
-        '
-        Me.ThirteenCheckBox3.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox3.Checked = True
-        Me.ThirteenCheckBox3.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox3.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox3.Location = New System.Drawing.Point(241, 104)
-        Me.ThirteenCheckBox3.Name = "ThirteenCheckBox3"
-        Me.ThirteenCheckBox3.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ThirteenCheckBox3.Size = New System.Drawing.Size(151, 17)
-        Me.ThirteenCheckBox3.TabIndex = 18
-        Me.ThirteenCheckBox3.Text = "Send Logs to Webserver"
-        '
-        'ThirteenCheckBox2
-        '
-        Me.ThirteenCheckBox2.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox2.Checked = True
-        Me.ThirteenCheckBox2.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox2.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox2.Location = New System.Drawing.Point(241, 81)
-        Me.ThirteenCheckBox2.Name = "ThirteenCheckBox2"
-        Me.ThirteenCheckBox2.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ThirteenCheckBox2.Size = New System.Drawing.Size(97, 17)
-        Me.ThirteenCheckBox2.TabIndex = 17
-        Me.ThirteenCheckBox2.Text = "Network Stats"
-        '
-        'ThirteenTextBox1
-        '
-        Me.ThirteenTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer), CType(CType(35, Byte), Integer))
-        Me.ThirteenTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        Me.ThirteenTextBox1.ColorScheme = NazgulMonitor.ThirteenTextBox.ColorSchemes.Dark
-        Me.ThirteenTextBox1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenTextBox1.ForeColor = System.Drawing.Color.White
-        Me.ThirteenTextBox1.Location = New System.Drawing.Point(3, 365)
-        Me.ThirteenTextBox1.Multiline = True
-        Me.ThirteenTextBox1.Name = "ThirteenTextBox1"
-        Me.ThirteenTextBox1.ReadOnly = True
-        Me.ThirteenTextBox1.Size = New System.Drawing.Size(408, 149)
-        Me.ThirteenTextBox1.TabIndex = 16
-        '
-        'ThirteenButton4
-        '
-        Me.ThirteenButton4.AccentColor = System.Drawing.Color.DodgerBlue
-        Me.ThirteenButton4.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.ThirteenButton4.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
-        Me.ThirteenButton4.Enabled = False
-        Me.ThirteenButton4.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenButton4.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton4.Location = New System.Drawing.Point(84, 306)
-        Me.ThirteenButton4.Name = "ThirteenButton4"
-        Me.ThirteenButton4.Size = New System.Drawing.Size(75, 23)
-        Me.ThirteenButton4.TabIndex = 15
-        Me.ThirteenButton4.Text = "Stop"
-        Me.ThirteenButton4.UseVisualStyleBackColor = False
-        '
-        'ThirteenButton3
-        '
-        Me.ThirteenButton3.AccentColor = System.Drawing.Color.DodgerBlue
-        Me.ThirteenButton3.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.ThirteenButton3.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
-        Me.ThirteenButton3.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenButton3.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton3.Location = New System.Drawing.Point(3, 306)
-        Me.ThirteenButton3.Name = "ThirteenButton3"
-        Me.ThirteenButton3.Size = New System.Drawing.Size(75, 23)
-        Me.ThirteenButton3.TabIndex = 14
-        Me.ThirteenButton3.Text = "Start"
-        Me.ThirteenButton3.UseVisualStyleBackColor = False
-        '
-        'PictureBox1
-        '
-        Me.PictureBox1.BackColor = System.Drawing.Color.Transparent
-        Me.PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), System.Drawing.Image)
-        Me.PictureBox1.Location = New System.Drawing.Point(-79, 208)
-        Me.PictureBox1.Name = "PictureBox1"
-        Me.PictureBox1.Size = New System.Drawing.Size(570, 15)
-        Me.PictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.PictureBox1.TabIndex = 13
-        Me.PictureBox1.TabStop = False
-        '
-        'ThirteenCheckBox1
-        '
-        Me.ThirteenCheckBox1.BackColor = System.Drawing.Color.Transparent
-        Me.ThirteenCheckBox1.Checked = True
-        Me.ThirteenCheckBox1.ColorScheme = NazgulMonitor.ThirteenCheckBox.ColorSchemes.Dark
-        Me.ThirteenCheckBox1.ForeColor = System.Drawing.Color.White
-        Me.ThirteenCheckBox1.Location = New System.Drawing.Point(241, 35)
-        Me.ThirteenCheckBox1.Name = "ThirteenCheckBox1"
-        Me.ThirteenCheckBox1.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.ThirteenCheckBox1.Size = New System.Drawing.Size(118, 17)
-        Me.ThirteenCheckBox1.TabIndex = 12
-        Me.ThirteenCheckBox1.Text = "CPU Temperature"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(3, 86)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(39, 17)
-        Me.Label9.TabIndex = 11
-        Me.Label9.Text = "CPU: "
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(3, 171)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(71, 17)
-        Me.Label8.TabIndex = 10
-        Me.Label8.Text = "Download: "
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(3, 154)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(55, 17)
-        Me.Label7.TabIndex = 9
-        Me.Label7.Text = "Upload: "
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(3, 137)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(37, 17)
-        Me.Label5.TabIndex = 6
-        Me.Label5.Text = "RAM:"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(3, 69)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(39, 17)
-        Me.Label4.TabIndex = 5
-        Me.Label4.Text = "Ping: "
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(3, 120)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(39, 17)
-        Me.Label3.TabIndex = 4
-        Me.Label3.Text = "CPU: "
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(3, 35)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(102, 17)
-        Me.Label2.TabIndex = 3
-        Me.Label2.Text = "Windows Version"
-        '
-        'Label1
-        '
-        Me.Label1.AutoSize = True
-        Me.Label1.BackColor = System.Drawing.Color.Transparent
-        Me.Label1.Location = New System.Drawing.Point(3, 520)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(36, 17)
-        Me.Label1.TabIndex = 2
-        Me.Label1.Text = "Time"
-        '
-        'ThirteenButton2
-        '
-        Me.ThirteenButton2.AccentColor = System.Drawing.Color.DodgerBlue
-        Me.ThirteenButton2.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.ThirteenButton2.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
-        Me.ThirteenButton2.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenButton2.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton2.Location = New System.Drawing.Point(391, 3)
-        Me.ThirteenButton2.Name = "ThirteenButton2"
-        Me.ThirteenButton2.Size = New System.Drawing.Size(20, 23)
-        Me.ThirteenButton2.TabIndex = 1
-        Me.ThirteenButton2.Text = "X"
-        Me.ThirteenButton2.UseVisualStyleBackColor = False
-        '
-        'ThirteenButton1
-        '
-        Me.ThirteenButton1.AccentColor = System.Drawing.Color.DodgerBlue
-        Me.ThirteenButton1.BackColor = System.Drawing.Color.FromArgb(CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer), CType(CType(50, Byte), Integer))
-        Me.ThirteenButton1.ColorScheme = NazgulMonitor.ThirteenButton.ColorSchemes.Dark
-        Me.ThirteenButton1.Font = New System.Drawing.Font("Segoe UI Semilight", 9.75!)
-        Me.ThirteenButton1.ForeColor = System.Drawing.Color.White
-        Me.ThirteenButton1.Location = New System.Drawing.Point(365, 3)
-        Me.ThirteenButton1.Name = "ThirteenButton1"
-        Me.ThirteenButton1.Size = New System.Drawing.Size(20, 23)
-        Me.ThirteenButton1.TabIndex = 0
-        Me.ThirteenButton1.Text = "_"
-        Me.ThirteenButton1.UseVisualStyleBackColor = False
         '
         'Form1
         '
@@ -576,57 +576,56 @@ Partial Class Form1
         Me.MaximizeBox = False
         Me.Name = "Form1"
         Me.Text = "NazgulMonitor"
+        CType(Me.SeparatorImage, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.SendLogsTrackbar, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.AutoRestartMinutesUpDownNumeric, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.RefreshEveryUpDownNumeric, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ThirteenForm1.ResumeLayout(False)
         Me.ThirteenForm1.PerformLayout()
-        CType(Me.NumericUpDown2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.NumericUpDown1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.TrackBar1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
 
     End Sub
-
-    Friend WithEvents ThirteenForm1 As ThirteenForm
-    Friend WithEvents ThirteenButton2 As ThirteenButton
-    Friend WithEvents ThirteenButton1 As ThirteenButton
-    Friend WithEvents Label1 As Label
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Label3 As Label
     Friend WithEvents Timer2 As Timer
-    Friend WithEvents Label4 As Label
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents ThirteenButton4 As ThirteenButton
-    Friend WithEvents ThirteenButton3 As ThirteenButton
-    Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ThirteenCheckBox1 As ThirteenCheckBox
-    Friend WithEvents ThirteenTextBox1 As ThirteenTextBox
-    Friend WithEvents ThirteenCheckBox2 As ThirteenCheckBox
-    Friend WithEvents ThirteenCheckBox3 As ThirteenCheckBox
-    Friend WithEvents Label6 As Label
-    Friend WithEvents TrackBar1 As TrackBar
-    Friend WithEvents ThirteenTextBox2 As ThirteenTextBox
-    Friend WithEvents ThirteenCheckBox4 As ThirteenCheckBox
-    Friend WithEvents Label13 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
     Friend WithEvents Timer3 As Timer
-    Friend WithEvents ThirteenCheckBox5 As ThirteenCheckBox
-    Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents ThirteenButton5 As ThirteenButton
-    Friend WithEvents ThirteenCheckBox6 As ThirteenCheckBox
-    Friend WithEvents ThirteenButton6 As ThirteenButton
-    Friend WithEvents Label16 As Label
-    Friend WithEvents NumericUpDown1 As NumericUpDown
-    Friend WithEvents ThirteenCheckBox7 As ThirteenCheckBox
     Friend WithEvents NotifyIcon1 As NotifyIcon
-    Friend WithEvents ThirteenCheckBox8 As ThirteenCheckBox
-    Friend WithEvents Label18 As Label
-    Friend WithEvents Label17 As Label
-    Friend WithEvents NumericUpDown2 As NumericUpDown
+    Friend WithEvents MinimizeButton As ThirteenButton
+    Friend WithEvents CloseButton As ThirteenButton
+    Friend WithEvents TimeLabel As Label
+    Friend WithEvents WinVersionLabel As Label
+    Friend WithEvents CPUUsageLabel As Label
+    Friend WithEvents PingLabel As Label
+    Friend WithEvents RAMUsageLabel As Label
+    Friend WithEvents UploadLabel As Label
+    Friend WithEvents DownloadLabel As Label
+    Friend WithEvents CPUTempLabel As Label
+    Friend WithEvents CPUTempCheckBox As ThirteenCheckBox
+    Friend WithEvents SeparatorImage As PictureBox
+    Friend WithEvents StartMonitorButton As ThirteenButton
+    Friend WithEvents StopButton As ThirteenButton
+    Friend WithEvents LogsTextBox As ThirteenTextBox
+    Friend WithEvents NetworkStatsCheckBox As ThirteenCheckBox
+    Friend WithEvents WebserverCheckBox As ThirteenCheckBox
+    Friend WithEvents IntIPLabel As Label
+    Friend WithEvents SendLogsTrackbar As TrackBar
+    Friend WithEvents LocalCSVCheckBox As ThirteenCheckBox
+    Friend WithEvents WebserverTextBox As ThirteenTextBox
+    Friend WithEvents SendLogsLabel As Label
+    Friend WithEvents SendLogsCPUTempLabel As Label
+    Friend WithEvents SendLogsCPUUsageLabel As Label
+    Friend WithEvents SendLogsRAMUsageLabel As Label
+    Friend WithEvents GPUTempLabel As Label
+    Friend WithEvents SendLogsGPUTempLabel As Label
+    Friend WithEvents GPUTempCheckBox As ThirteenCheckBox
+    Friend WithEvents ClearLogsButton As ThirteenButton
+    Friend WithEvents TopMostCheckBox As ThirteenCheckBox
+    Friend WithEvents ResetButton As ThirteenButton
+    Friend WithEvents AutoRestartCheckBox As ThirteenCheckBox
+    Friend WithEvents AutoRestartMinutesUpDownNumeric As NumericUpDown
+    Friend WithEvents afterMinutesLabel As Label
+    Friend WithEvents TelegramAlertCheckBox As ThirteenCheckBox
+    Friend WithEvents RefreshEveryUpDownNumeric As NumericUpDown
+    Friend WithEvents secondsLabel As Label
+    Friend WithEvents refreshLabel As Label
+    Friend WithEvents ThirteenForm1 As ThirteenForm
 End Class

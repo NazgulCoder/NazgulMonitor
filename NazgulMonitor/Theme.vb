@@ -66,12 +66,14 @@ Public Class ThirteenForm : Inherits ContainerControl
         If e.Button = Windows.Forms.MouseButtons.Left And New Rectangle(0, 0, Width, MoveHeight).Contains(e.Location) Then
             Cap = True : MouseP = e.Location
         End If
+        System.Threading.Thread.Sleep(1)
     End Sub
     Protected Overrides Sub OnMouseMove(ByVal e As System.Windows.Forms.MouseEventArgs)
         MyBase.OnMouseMove(e)
         If Cap Then
             Parent.Location = MousePosition - MouseP
         End If
+        System.Threading.Thread.Sleep(1)
     End Sub
     Protected Overrides Sub OnMouseUp(ByVal e As System.Windows.Forms.MouseEventArgs)
         MyBase.OnMouseUp(e) : Cap = False
@@ -95,6 +97,8 @@ Public Class ThirteenForm : Inherits ContainerControl
 
         e.Graphics.DrawImage(B, New Point(0, 0))
         G.Dispose() : B.Dispose()
+
+        System.Threading.Thread.Sleep(1)
     End Sub
     Protected Sub OnAccentColorChanged() Handles Me.AccentColorChanged
         Invalidate()
@@ -191,6 +195,8 @@ Public Class ThirteenControlBox : Inherits Control
             ButtonState = ButtonHover.None
         End If
         Invalidate()
+
+        System.Threading.Thread.Sleep(1)
     End Sub
     Protected Overrides Sub OnPaint(e As PaintEventArgs)
         Dim B As New Bitmap(Width, Height)
@@ -225,6 +231,8 @@ Public Class ThirteenControlBox : Inherits Control
 
         e.Graphics.DrawImage(B, New Point(0, 0))
         G.Dispose() : B.Dispose()
+
+        System.Threading.Thread.Sleep(1)
     End Sub
     Protected Overrides Sub OnMouseUp(e As MouseEventArgs)
         MyBase.OnMouseDown(e)
@@ -343,6 +351,8 @@ Public Class ThirteenButton : Inherits Button
 
         e.Graphics.DrawImage(B, New Point(0, 0))
         G.Dispose() : B.Dispose()
+
+        System.Threading.Thread.Sleep(1)
     End Sub
     Protected Sub OnAccentColorChanged() Handles Me.AccentColorChanged
         Invalidate()
@@ -468,6 +478,8 @@ Public Class ThirteenTabControl : Inherits TabControl
 
         e.Graphics.DrawImage(B, New Point(0, 0))
         G.Dispose() : B.Dispose()
+
+        System.Threading.Thread.Sleep(1)
     End Sub
 End Class
 
@@ -597,6 +609,8 @@ Public Class ThirteenComboBox : Inherits ComboBox
 
         e.Graphics.DrawImage(B.Clone(), 0, 0)
         G.Dispose() : B.Dispose()
+
+        System.Threading.Thread.Sleep(1)
     End Sub
 End Class
 
@@ -724,6 +738,8 @@ End Class
 
         e.Graphics.DrawImage(B.Clone(), 0, 0)
         G.Dispose() : B.Dispose()
+
+        System.Threading.Thread.Sleep(1)
     End Sub
 
 End Class
@@ -842,6 +858,9 @@ End Class
 
         e.Graphics.DrawImage(B.Clone(), 0, 0)
         G.Dispose() : B.Dispose()
+
+
+        System.Threading.Thread.Sleep(1)
 
     End Sub
 

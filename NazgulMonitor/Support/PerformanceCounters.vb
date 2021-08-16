@@ -60,7 +60,6 @@ Module PerformanceCounters
                 Form1.GlobalVariables.PingResult = "Ping: Failed to Ping"
             End If
         Catch
-            Console.WriteLine("Internet is not available")
             Form1.GlobalVariables.PingResult = "Ping thread went in error"
         End Try
         'End Sub)
