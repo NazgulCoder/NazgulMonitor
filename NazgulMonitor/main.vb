@@ -144,6 +144,7 @@ Public Class main
             getLog("Error while releasing memory")
         End Try
 
+        removeNotifyIcon()
 
         'sets again the boolean true for the telegram warnings (once every 60 sec)
         If sendTelegramWarnings = False Then
@@ -450,140 +451,6 @@ Public Class main
         saveConfig()
     End Sub
 
-    Private Sub saveConfig()
-        If My.Computer.FileSystem.FileExists("config.ini") = False Then
-            Dim fs As FileStream = File.Create("config.ini")
-            fs.Close()
-        End If
-
-        Dim trackbarvalue As String = SendLogsTrackbar.Value
-        Dim webserver As String = WebserverTextBox.Text
-        Dim cputemp As String
-        Dim network As String
-        Dim sendlogswebserver As String
-        Dim savelocal As String
-        Dim gputemp As String
-        Dim topmost As String
-        Dim restart As String
-        Dim telegram As String
-        Dim restarttime As String = AutoRestartMinutesUpDownNumeric.Value
-        Dim refreshdata As String = RefreshEveryUpDownNumeric.Value
-
-        If CPUTempCheckBox.Checked = True Then
-            cputemp = "1"
-        Else
-            cputemp = "0"
-        End If
-        If NetworkStatsCheckBox.Checked = True Then
-            network = "1"
-        Else
-            network = "0"
-        End If
-        If WebserverCheckBox.Checked = True Then
-            sendlogswebserver = "1"
-        Else
-            sendlogswebserver = "0"
-        End If
-        If LocalCSVCheckBox.Checked = True Then
-            savelocal = "1"
-        Else
-            savelocal = "0"
-        End If
-        If GPUTempCheckBox.Checked = True Then
-            gputemp = "1"
-        Else
-            gputemp = "0"
-        End If
-        If TopMostCheckBox.Checked = True Then
-            topmost = "1"
-        Else
-            topmost = "0"
-        End If
-        If AutoRestartCheckBox.Checked = True Then
-            restart = "1"
-        Else
-            restart = "0"
-        End If
-        If TelegramAlertCheckBox.Checked = True Then
-            telegram = "1"
-        Else
-            telegram = "0"
-        End If
-
-        Try
-            Using writer As New StreamWriter("config.ini", False)
-                writer.Write(trackbarvalue & "~" & webserver & "~" & cputemp & "~" & network & "~" & sendlogswebserver & "~" & savelocal &
-                             "~" & gputemp & "~" & topmost & "~" & restart & "~" & restarttime & "~" & telegram & "~" & refreshdata)
-            End Using
-        Catch
-            LogsTextBox.Text = TimeLabel.Text & " - Could not update config.ini" & Environment.NewLine & LogsTextBox.Text
-        End Try
-
-    End Sub
-    Private Sub loadConfig()
-        If My.Computer.FileSystem.FileExists("config.ini") = False Then
-            Dim fs As FileStream = File.Create("config.ini")
-            fs.Close()
-            resetConfig()
-        End If
-
-
-        Dim strArr() As String
-        Dim reader As String = My.Computer.FileSystem.ReadAllText("config.ini")
-        strArr = reader.Split("~")
-        SendLogsTrackbar.Value = strArr(0)
-        WebserverTextBox.Text = strArr(1)
-        If strArr(2) = "1" Then
-            CPUTempCheckBox.Checked = True
-        Else
-            CPUTempCheckBox.Checked = False
-        End If
-        If strArr(3) = "1" Then
-            NetworkStatsCheckBox.Checked = True
-        Else
-            NetworkStatsCheckBox.Checked = False
-        End If
-        If strArr(4) = "1" Then
-            WebserverCheckBox.Checked = True
-        Else
-            WebserverCheckBox.Checked = False
-        End If
-        If strArr(5) = "1" Then
-            LocalCSVCheckBox.Checked = True
-        Else
-            LocalCSVCheckBox.Checked = False
-        End If
-        If strArr(6) = "1" Then
-            GPUTempCheckBox.Checked = True
-        Else
-            GPUTempCheckBox.Checked = False
-        End If
-        If strArr(7) = "1" Then
-            TopMostCheckBox.Checked = True
-        Else
-            TopMostCheckBox.Checked = False
-        End If
-        If strArr(8) = "1" Then
-            AutoRestartCheckBox.Checked = True
-        Else
-            AutoRestartCheckBox.Checked = False
-        End If
-        AutoRestartMinutesUpDownNumeric.Value = strArr(9)
-        If strArr(10) = "1" Then
-            TelegramAlertCheckBox.Checked = True
-        Else
-            TelegramAlertCheckBox.Checked = False
-        End If
-        RefreshEveryUpDownNumeric.Value = strArr(11)
-
-
-        'setting max values for logs
-        SendLogsCPUTempLabel.Text = "CPU Temp. " & SendLogsTrackbar.Value & " °C"
-        SendLogsGPUTempLabel.Text = "GPU Temp. " & SendLogsTrackbar.Value & " °C"
-        SendLogsCPUUsageLabel.Text = "CPU Usage " & SendLogsTrackbar.Value & "%"
-        SendLogsRAMUsageLabel.Text = "RAM Usage " & SendLogsTrackbar.Value & "%"
-    End Sub
-
     Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
         Me.WindowState = FormWindowState.Normal
     End Sub
@@ -595,4 +462,140 @@ Public Class main
             TopMost = False
         End If
     End Sub
+
+    '#Region "old code"
+    '    Private Sub saveConfig1()
+    '        If My.Computer.FileSystem.FileExists("config.ini") = False Then
+    '            Dim fs As FileStream = File.Create("config.ini")
+    '            fs.Close()
+    '        End If
+
+    '        Dim trackbarvalue As String = SendLogsTrackbar.Value
+    '        Dim webserver As String = WebserverTextBox.Text
+    '        Dim cputemp As String
+    '        Dim network As String
+    '        Dim sendlogswebserver As String
+    '        Dim savelocal As String
+    '        Dim gputemp As String
+    '        Dim topmost As String
+    '        Dim restart As String
+    '        Dim telegram As String
+    '        Dim restarttime As String = AutoRestartMinutesUpDownNumeric.Value
+    '        Dim refreshdata As String = RefreshEveryUpDownNumeric.Value
+
+    '        If CPUTempCheckBox.Checked = True Then
+    '            cputemp = "1"
+    '        Else
+    '            cputemp = "0"
+    '        End If
+    '        If NetworkStatsCheckBox.Checked = True Then
+    '            network = "1"
+    '        Else
+    '            network = "0"
+    '        End If
+    '        If WebserverCheckBox.Checked = True Then
+    '            sendlogswebserver = "1"
+    '        Else
+    '            sendlogswebserver = "0"
+    '        End If
+    '        If LocalCSVCheckBox.Checked = True Then
+    '            savelocal = "1"
+    '        Else
+    '            savelocal = "0"
+    '        End If
+    '        If GPUTempCheckBox.Checked = True Then
+    '            gputemp = "1"
+    '        Else
+    '            gputemp = "0"
+    '        End If
+    '        If TopMostCheckBox.Checked = True Then
+    '            topmost = "1"
+    '        Else
+    '            topmost = "0"
+    '        End If
+    '        If AutoRestartCheckBox.Checked = True Then
+    '            restart = "1"
+    '        Else
+    '            restart = "0"
+    '        End If
+    '        If TelegramAlertCheckBox.Checked = True Then
+    '            telegram = "1"
+    '        Else
+    '            telegram = "0"
+    '        End If
+
+    '        Try
+    '            Using writer As New StreamWriter("config.ini", False)
+    '                writer.Write(trackbarvalue & "~" & webserver & "~" & cputemp & "~" & network & "~" & sendlogswebserver & "~" & savelocal &
+    '                             "~" & gputemp & "~" & topmost & "~" & restart & "~" & restarttime & "~" & telegram & "~" & refreshdata)
+    '            End Using
+    '        Catch
+    '            LogsTextBox.Text = TimeLabel.Text & " - Could not update config.ini" & Environment.NewLine & LogsTextBox.Text
+    '        End Try
+
+    '    End Sub
+    '    Private Sub loadConfig1()
+    '        If My.Computer.FileSystem.FileExists("config.ini") = False Then
+    '            Dim fs As FileStream = File.Create("config.ini")
+    '            fs.Close()
+    '            resetConfig()
+    '        End If
+
+
+    '        Dim strArr() As String
+    '        Dim reader As String = My.Computer.FileSystem.ReadAllText("config.ini")
+    '        strArr = reader.Split("~")
+    '        SendLogsTrackbar.Value = strArr(0)
+    '        WebserverTextBox.Text = strArr(1)
+    '        If strArr(2) = "1" Then
+    '            CPUTempCheckBox.Checked = True
+    '        Else
+    '            CPUTempCheckBox.Checked = False
+    '        End If
+    '        If strArr(3) = "1" Then
+    '            NetworkStatsCheckBox.Checked = True
+    '        Else
+    '            NetworkStatsCheckBox.Checked = False
+    '        End If
+    '        If strArr(4) = "1" Then
+    '            WebserverCheckBox.Checked = True
+    '        Else
+    '            WebserverCheckBox.Checked = False
+    '        End If
+    '        If strArr(5) = "1" Then
+    '            LocalCSVCheckBox.Checked = True
+    '        Else
+    '            LocalCSVCheckBox.Checked = False
+    '        End If
+    '        If strArr(6) = "1" Then
+    '            GPUTempCheckBox.Checked = True
+    '        Else
+    '            GPUTempCheckBox.Checked = False
+    '        End If
+    '        If strArr(7) = "1" Then
+    '            TopMostCheckBox.Checked = True
+    '        Else
+    '            TopMostCheckBox.Checked = False
+    '        End If
+    '        If strArr(8) = "1" Then
+    '            AutoRestartCheckBox.Checked = True
+    '        Else
+    '            AutoRestartCheckBox.Checked = False
+    '        End If
+    '        AutoRestartMinutesUpDownNumeric.Value = strArr(9)
+    '        If strArr(10) = "1" Then
+    '            TelegramAlertCheckBox.Checked = True
+    '        Else
+    '            TelegramAlertCheckBox.Checked = False
+    '        End If
+    '        RefreshEveryUpDownNumeric.Value = strArr(11)
+
+
+    '        'setting max values for logs
+    '        SendLogsCPUTempLabel.Text = "CPU Temp. " & SendLogsTrackbar.Value & " °C"
+    '        SendLogsGPUTempLabel.Text = "GPU Temp. " & SendLogsTrackbar.Value & " °C"
+    '        SendLogsCPUUsageLabel.Text = "CPU Usage " & SendLogsTrackbar.Value & "%"
+    '        SendLogsRAMUsageLabel.Text = "RAM Usage " & SendLogsTrackbar.Value & "%"
+    '    End Sub
+    '#End Region
 End Class

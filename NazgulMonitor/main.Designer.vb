@@ -440,7 +440,7 @@ Partial Class main
         'NotifyIcon1
         '
         Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
-        Me.NotifyIcon1.Text = "NotifyIcon1"
+        Me.NotifyIcon1.Text = "NazgulMonitor"
         Me.NotifyIcon1.Visible = True
         '
         'main

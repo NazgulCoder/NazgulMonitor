@@ -386,3 +386,62 @@
 16 Aug 2021 - 13:11:02;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 35ms;CPU: Disabled;GPU: Disabled;CPU: 11% used;RAM: 74% used;Upload: 653 Bytes;Download: 520 Bytes
 16 Aug 2021 - 13:11:03;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 25ms;CPU: Disabled;GPU: Disabled;CPU: 18% used;RAM: 74% used;Upload: 653 Bytes;Download: 520 Bytes
 16 Aug 2021 - 13:11:04;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 24ms;CPU: Disabled;GPU: Disabled;CPU: 12% used;RAM: 74% used;Upload: 1.26 KB;Download: 1019 Bytes
+20 Aug 2021 - 14:38:56;Windows 10 Pro;Int IP: 192.168.134.128;Ping: Disabled;CPU: Disabled;GPU: Disabled;CPU: ;RAM: 72% used;Upload: Disabled;Download: Disabled
+20 Aug 2021 - 14:38:57;Windows 10 Pro;Int IP: 192.168.134.128;Ping: Disabled;CPU: Disabled;GPU: Disabled;CPU: ;RAM: 72% used;Upload: Disabled;Download: Disabled
+20 Aug 2021 - 14:38:58;Windows 10 Pro;Int IP: 192.168.134.128;Ping: Disabled;CPU: Disabled;GPU: Disabled;CPU: 11% used;RAM: 72% used;Upload: Disabled;Download: Disabled
+20 Aug 2021 - 14:38:59;Windows 10 Pro;Int IP: 192.168.134.128;Ping: Disabled;CPU: Disabled;GPU: Disabled;CPU: 7% used;RAM: 72% used;Upload: Disabled;Download: Disabled
+20 Aug 2021 - 14:39:00;Windows 10 Pro;Int IP: 192.168.134.128;Ping: Disabled;CPU: Disabled;GPU: Disabled;CPU: 7% used;RAM: 72% used;Upload: Disabled;Download: Disabled
+20 Aug 2021 - 14:39:01;Windows 10 Pro;Int IP: 192.168.134.128;Ping: Disabled;CPU: Disabled;GPU: Disabled;CPU: 8% used;RAM: 72% used;Upload: Disabled;Download: Disabled
+20 Aug 2021 - 14:39:02;Windows 10 Pro;Int IP: 192.168.134.128;Ping: Disabled;CPU: Disabled;GPU: Disabled;CPU: 8% used;RAM: 72% used;Upload: Disabled;Download: Disabled
+20 Aug 2021 - 14:40:28;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 28ms;CPU: Disabled;GPU: Disabled;CPU: 12% used;RAM: 73% used;Upload: 1.31 KB;Download: 990 Bytes
+20 Aug 2021 - 14:40:48;Windows 10 Pro;Int IP: 192.168.134.128;Ping thread went in error;CPU: Disabled;GPU: Disabled;CPU: 33% used;RAM: 73% used;Upload: 476 Bytes;Download: 552 Bytes
+20 Aug 2021 - 14:40:49;Windows 10 Pro;Int IP: 192.168.134.128;Ping thread went in error;CPU: Disabled;GPU: Disabled;CPU: 33% used;RAM: 73% used;Upload: 476 Bytes;Download: 552 Bytes
+20 Aug 2021 - 14:43:03;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 20ms;CPU: Disabled;GPU: Disabled;CPU: 37% used;RAM: 75% used;Upload: 628 Bytes;Download: 1.65 KB
+20 Aug 2021 - 14:43:06;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 43ms;CPU: Disabled;GPU: Disabled;CPU: 25% used;RAM: 75% used;Upload: 1.07 KB;Download: 615 Bytes
+20 Aug 2021 - 14:43:08;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 33% used;RAM: 75% used;Upload: 1.07 KB;Download: 615 Bytes
+20 Aug 2021 - 14:43:10;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 26% used;RAM: 75% used;Upload: 478 Bytes;Download: 306 Bytes
+20 Aug 2021 - 14:43:10;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 24ms;CPU: Disabled;GPU: Disabled;CPU: 26% used;RAM: 75% used;Upload: 478 Bytes;Download: 306 Bytes
+20 Aug 2021 - 14:43:14;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 36ms;CPU: Disabled;GPU: Disabled;CPU: 27% used;RAM: 75% used;Upload: 553 Bytes;Download: 397 Bytes
+20 Aug 2021 - 14:43:15;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 36ms;CPU: Disabled;GPU: Disabled;CPU: 27% used;RAM: 76% used;Upload: 553 Bytes;Download: 397 Bytes
+20 Aug 2021 - 14:43:16;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 22ms;CPU: Disabled;GPU: Disabled;CPU: 28% used;RAM: 76% used;Upload: 553 Bytes;Download: 397 Bytes
+20 Aug 2021 - 14:43:19;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 23ms;CPU: Disabled;GPU: Disabled;CPU: 37% used;RAM: 76% used;Upload: 5.89 KB;Download: 4.71 KB
+20 Aug 2021 - 14:43:20;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 37% used;RAM: 76% used;Upload: 2.18 KB;Download: 2.38 KB
+20 Aug 2021 - 14:43:22;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 102ms;CPU: Disabled;GPU: Disabled;CPU: 29% used;RAM: 76% used;Upload: 2.18 KB;Download: 2.38 KB
+20 Aug 2021 - 14:43:23;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 27ms;CPU: Disabled;GPU: Disabled;CPU: 29% used;RAM: 76% used;Upload: 568 Bytes;Download: 585 Bytes
+20 Aug 2021 - 14:43:26;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 50ms;CPU: Disabled;GPU: Disabled;CPU: 32% used;RAM: 76% used;Upload: 196 Bytes;Download: 262 Bytes
+20 Aug 2021 - 14:43:26;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 50ms;CPU: Disabled;GPU: Disabled;CPU: 32% used;RAM: 76% used;Upload: 196 Bytes;Download: 262 Bytes
+20 Aug 2021 - 14:43:26;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 50ms;CPU: Disabled;GPU: Disabled;CPU: 32% used;RAM: 76% used;Upload: 196 Bytes;Download: 262 Bytes
+20 Aug 2021 - 14:43:29;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 39% used;RAM: 76% used;Upload: 894 Bytes;Download: 409 Bytes
+20 Aug 2021 - 14:43:30;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 29ms;CPU: Disabled;GPU: Disabled;CPU: 37% used;RAM: 76% used;Upload: 44.12 KB;Download: 19.00 KB
+20 Aug 2021 - 14:43:31;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 37% used;RAM: 76% used;Upload: 44.12 KB;Download: 19.00 KB
+20 Aug 2021 - 14:43:31;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 28ms;CPU: Disabled;GPU: Disabled;CPU: 37% used;RAM: 77% used;Upload: 8.32 KB;Download: 8.67 KB
+20 Aug 2021 - 14:43:32;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 28ms;CPU: Disabled;GPU: Disabled;CPU: 55% used;RAM: 76% used;Upload: 8.32 KB;Download: 8.67 KB
+20 Aug 2021 - 14:43:32;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 22ms;CPU: Disabled;GPU: Disabled;CPU: 55% used;RAM: 76% used;Upload: 8.32 KB;Download: 8.67 KB
+20 Aug 2021 - 14:43:50;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 13% used;RAM: 76% used;Upload: 134 Bytes;Download: 163 Bytes
+20 Aug 2021 - 14:43:50;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 26ms;CPU: Disabled;GPU: Disabled;CPU: 13% used;RAM: 77% used;Upload: 134 Bytes;Download: 163 Bytes
+20 Aug 2021 - 14:43:52;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 20ms;CPU: Disabled;GPU: Disabled;CPU: 13% used;RAM: 77% used;Upload: 1.10 KB;Download: 530 Bytes
+20 Aug 2021 - 14:43:53;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 23ms;CPU: Disabled;GPU: Disabled;CPU: 33% used;RAM: 77% used;Upload: 1.10 KB;Download: 530 Bytes
+20 Aug 2021 - 14:43:55;Windows 10 Pro;Int IP: 192.168.134.128;Ping thread went in error;CPU: Disabled;GPU: Disabled;CPU: 35% used;RAM: 77% used;Upload: 1.10 KB;Download: 530 Bytes
+20 Aug 2021 - 14:43:56;Windows 10 Pro;Int IP: 192.168.134.128;Ping thread went in error;CPU: Disabled;GPU: Disabled;CPU: 35% used;RAM: 77% used;Upload: 1.10 KB;Download: 530 Bytes
+20 Aug 2021 - 14:43:59;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 38% used;RAM: 77% used;Upload: 1.10 KB;Download: 508 Bytes
+20 Aug 2021 - 14:43:59;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 38% used;RAM: 77% used;Upload: 1.10 KB;Download: 508 Bytes
+20 Aug 2021 - 14:44:00;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 22ms;CPU: Disabled;GPU: Disabled;CPU: 38% used;RAM: 77% used;Upload: 1.10 KB;Download: 508 Bytes
+20 Aug 2021 - 14:44:00;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 22ms;CPU: Disabled;GPU: Disabled;CPU: 38% used;RAM: 77% used;Upload: 1.10 KB;Download: 508 Bytes
+20 Aug 2021 - 14:44:01;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 31ms;CPU: Disabled;GPU: Disabled;CPU: 38% used;RAM: 77% used;Upload: 710 Bytes;Download: 564 Bytes
+20 Aug 2021 - 14:44:03;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 43ms;CPU: Disabled;GPU: Disabled;CPU: 38% used;RAM: 77% used;Upload: 710 Bytes;Download: 564 Bytes
+20 Aug 2021 - 14:44:04;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 30ms;CPU: Disabled;GPU: Disabled;CPU: 38% used;RAM: 77% used;Upload: 494 Bytes;Download: 373 Bytes
+20 Aug 2021 - 14:44:05;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 23ms;CPU: Disabled;GPU: Disabled;CPU: 43% used;RAM: 77% used;Upload: 494 Bytes;Download: 373 Bytes
+20 Aug 2021 - 14:44:06;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 52ms;CPU: Disabled;GPU: Disabled;CPU: 41% used;RAM: 77% used;Upload: 1.04 KB;Download: 827 Bytes
+20 Aug 2021 - 14:44:06;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 34ms;CPU: Disabled;GPU: Disabled;CPU: 41% used;RAM: 78% used;Upload: 804 Bytes;Download: 580 Bytes
+20 Aug 2021 - 14:44:08;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 31ms;CPU: Disabled;GPU: Disabled;CPU: 44% used;RAM: 77% used;Upload: 804 Bytes;Download: 580 Bytes
+20 Aug 2021 - 14:44:09;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 21ms;CPU: Disabled;GPU: Disabled;CPU: 31% used;RAM: 78% used;Upload: 625 Bytes;Download: 363 Bytes
+20 Aug 2021 - 14:44:10;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 72ms;CPU: Disabled;GPU: Disabled;CPU: 41% used;RAM: 77% used;Upload: 619 Bytes;Download: 419 Bytes
+20 Aug 2021 - 14:44:11;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 26ms;CPU: Disabled;GPU: Disabled;CPU: 41% used;RAM: 78% used;Upload: 619 Bytes;Download: 419 Bytes
+20 Aug 2021 - 14:44:12;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 24ms;CPU: Disabled;GPU: Disabled;CPU: 44% used;RAM: 78% used;Upload: 655 Bytes;Download: 517 Bytes
+20 Aug 2021 - 14:44:13;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 24ms;CPU: Disabled;GPU: Disabled;CPU: 52% used;RAM: 78% used;Upload: 928 Bytes;Download: 758 Bytes
+20 Aug 2021 - 14:44:14;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 24ms;CPU: Disabled;GPU: Disabled;CPU: 46% used;RAM: 78% used;Upload: 885 Bytes;Download: 580 Bytes
+20 Aug 2021 - 14:44:15;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 26ms;CPU: Disabled;GPU: Disabled;CPU: 36% used;RAM: 78% used;Upload: 823 Bytes;Download: 583 Bytes
+20 Aug 2021 - 14:44:16;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 30ms;CPU: Disabled;GPU: Disabled;CPU: 43% used;RAM: 78% used;Upload: 1008 Bytes;Download: 1.20 KB
+20 Aug 2021 - 14:44:17;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 23ms;CPU: Disabled;GPU: Disabled;CPU: 43% used;RAM: 78% used;Upload: 1008 Bytes;Download: 1.20 KB
+20 Aug 2021 - 14:44:18;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 35ms;CPU: Disabled;GPU: Disabled;CPU: 43% used;RAM: 78% used;Upload: 2.43 KB;Download: 2.08 KB
+20 Aug 2021 - 14:44:19;Windows 10 Pro;Int IP: 192.168.134.128;Ping: 26ms;CPU: Disabled;GPU: Disabled;CPU: 43% used;RAM: 79% used;Upload: 896 Bytes;Download: 889 Bytes
