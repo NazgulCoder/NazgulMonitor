@@ -55,12 +55,12 @@ Module PerformanceCounters
             Result = SendPing.Send("www.google.com")
             ResponseTime = Result.RoundtripTime
             If Result.Status = Net.NetworkInformation.IPStatus.Success Then
-                Form1.GlobalVariables.PingResult = "Ping: " & ResponseTime.ToString & "ms"
+                main.GlobalVariables.PingResult = "Ping: " & ResponseTime.ToString & "ms"
             Else
-                Form1.GlobalVariables.PingResult = "Ping: Failed to Ping"
+                main.GlobalVariables.PingResult = "Ping: Failed to Ping"
             End If
         Catch
-            Form1.GlobalVariables.PingResult = "Ping thread went in error"
+            main.GlobalVariables.PingResult = "Ping thread went in error"
         End Try
         'End Sub)
         'thread.Start()
@@ -77,7 +77,7 @@ Module PerformanceCounters
 
         If backupcpu.Contains("0%") Then
         Else
-            Form1.GlobalVariables.CPUusage = backupcpu 'cpuusage is somehow too fast for the logs
+            main.GlobalVariables.CPUusage = backupcpu 'cpuusage is somehow too fast for the logs
         End If
     End Sub
 
@@ -102,8 +102,8 @@ Module PerformanceCounters
                 If backupNetwork.Contains("0;") Or backupNetwork.Contains(";0") Then
                 Else
                     strArrNetwork = backupNetwork.Split(";")
-                    Form1.GlobalVariables.upload = "Upload: " & BytesConverter(CLng(strArrNetwork(0)))
-                    Form1.GlobalVariables.download = "Download: " & BytesConverter(CLng(strArrNetwork(1)))
+                    main.GlobalVariables.upload = "Upload: " & BytesConverter(CLng(strArrNetwork(0)))
+                    main.GlobalVariables.download = "Download: " & BytesConverter(CLng(strArrNetwork(1)))
                 End If
                 'Label7.Text = (String.Format("{1} Bytes/s sent, {2} Bytes/s received", i, bytesSent(i).NextValue, bytesReceived(i).NextValue))
                 'Await Task.Delay(1000)
@@ -151,7 +151,7 @@ Module PerformanceCounters
         For Each gpu In gpus
             Dim sensors = gpu.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToArray()
             For Each sensor In sensors
-                Form1.GlobalVariables.GPUTemp = "GPU: " & sensor.Value & " Celsius"
+                main.GlobalVariables.GPUTemp = "GPU: " & sensor.Value & " Celsius"
             Next
         Next
 
@@ -188,7 +188,7 @@ Module PerformanceCounters
         For Each cpu In cpus
             Dim sensors = cpu.Sensors.Where(Function(s) s.SensorType = SensorType.Temperature).ToArray()
             For Each sensor In sensors
-                Form1.GlobalVariables.CPUTemp = "CPU: " & sensor.Value & " Celsius"
+                main.GlobalVariables.CPUTemp = "CPU: " & sensor.Value & " Celsius"
             Next
         Next
         'cp.Close()

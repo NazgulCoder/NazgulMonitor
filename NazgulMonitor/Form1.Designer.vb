@@ -202,7 +202,7 @@ Partial Class Form1
         Me.CPUTempCheckBox.Location = New System.Drawing.Point(241, 35)
         Me.CPUTempCheckBox.Name = "CPUTempCheckBox"
         Me.CPUTempCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.CPUTempCheckBox.Size = New System.Drawing.Size(130, 17)
+        Me.CPUTempCheckBox.Size = New System.Drawing.Size(118, 17)
         Me.CPUTempCheckBox.TabIndex = 12
         Me.CPUTempCheckBox.Text = "CPU Temperature"
         '
@@ -269,7 +269,7 @@ Partial Class Form1
         Me.NetworkStatsCheckBox.Location = New System.Drawing.Point(241, 81)
         Me.NetworkStatsCheckBox.Name = "NetworkStatsCheckBox"
         Me.NetworkStatsCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.NetworkStatsCheckBox.Size = New System.Drawing.Size(107, 17)
+        Me.NetworkStatsCheckBox.Size = New System.Drawing.Size(97, 17)
         Me.NetworkStatsCheckBox.TabIndex = 17
         Me.NetworkStatsCheckBox.Text = "Network Stats"
         '
@@ -282,7 +282,7 @@ Partial Class Form1
         Me.WebserverCheckBox.Location = New System.Drawing.Point(241, 104)
         Me.WebserverCheckBox.Name = "WebserverCheckBox"
         Me.WebserverCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.WebserverCheckBox.Size = New System.Drawing.Size(167, 17)
+        Me.WebserverCheckBox.Size = New System.Drawing.Size(151, 17)
         Me.WebserverCheckBox.TabIndex = 18
         Me.WebserverCheckBox.Text = "Send Logs to Webserver"
         '
@@ -316,7 +316,7 @@ Partial Class Form1
         Me.LocalCSVCheckBox.Location = New System.Drawing.Point(241, 127)
         Me.LocalCSVCheckBox.Name = "LocalCSVCheckBox"
         Me.LocalCSVCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.LocalCSVCheckBox.Size = New System.Drawing.Size(130, 17)
+        Me.LocalCSVCheckBox.Size = New System.Drawing.Size(122, 17)
         Me.LocalCSVCheckBox.TabIndex = 21
         Me.LocalCSVCheckBox.Text = "Save Logs to .CSV"
         '
@@ -395,7 +395,7 @@ Partial Class Form1
         Me.GPUTempCheckBox.Location = New System.Drawing.Point(241, 58)
         Me.GPUTempCheckBox.Name = "GPUTempCheckBox"
         Me.GPUTempCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.GPUTempCheckBox.Size = New System.Drawing.Size(130, 17)
+        Me.GPUTempCheckBox.Size = New System.Drawing.Size(119, 17)
         Me.GPUTempCheckBox.TabIndex = 29
         Me.GPUTempCheckBox.Text = "GPU Temperature"
         '
@@ -421,7 +421,7 @@ Partial Class Form1
         Me.TopMostCheckBox.ForeColor = System.Drawing.Color.White
         Me.TopMostCheckBox.Location = New System.Drawing.Point(278, 520)
         Me.TopMostCheckBox.Name = "TopMostCheckBox"
-        Me.TopMostCheckBox.Size = New System.Drawing.Size(133, 17)
+        Me.TopMostCheckBox.Size = New System.Drawing.Size(119, 17)
         Me.TopMostCheckBox.TabIndex = 31
         Me.TopMostCheckBox.Text = "Keep me TopMost"
         '
@@ -447,7 +447,7 @@ Partial Class Form1
         Me.AutoRestartCheckBox.ForeColor = System.Drawing.Color.White
         Me.AutoRestartCheckBox.Location = New System.Drawing.Point(165, 309)
         Me.AutoRestartCheckBox.Name = "AutoRestartCheckBox"
-        Me.AutoRestartCheckBox.Size = New System.Drawing.Size(101, 17)
+        Me.AutoRestartCheckBox.Size = New System.Drawing.Size(93, 17)
         Me.AutoRestartCheckBox.TabIndex = 33
         Me.AutoRestartCheckBox.Text = "AutoRestart?"
         '
@@ -479,7 +479,7 @@ Partial Class Form1
         Me.TelegramAlertCheckBox.Location = New System.Drawing.Point(241, 150)
         Me.TelegramAlertCheckBox.Name = "TelegramAlertCheckBox"
         Me.TelegramAlertCheckBox.RightToLeft = System.Windows.Forms.RightToLeft.No
-        Me.TelegramAlertCheckBox.Size = New System.Drawing.Size(150, 17)
+        Me.TelegramAlertCheckBox.Size = New System.Drawing.Size(136, 17)
         Me.TelegramAlertCheckBox.TabIndex = 36
         Me.TelegramAlertCheckBox.Text = "Send Telegram Alerts"
         '
