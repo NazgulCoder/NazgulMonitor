@@ -1,3 +1,6 @@
+# NazgulMonitor
+Monitoring tool for Windows Systems Servers
+
 ### Introduction
 Inspired by the most known monitoring softwares like PRTG, HetrixTools, Zabbix, Nagios etc. I want to introduce my NazgulMonitor tool fully coded in .NET. The idea is to have a very simple, 100% portable and standalone tool that does not require any particular configuration nor installation, just copy and paste onto your Windows Server and you are ready to go
 
