@@ -6,6 +6,21 @@ Inspired by the most known monitoring softwares like PRTG, HetrixTools, Zabbix, 
 
 ![tempsnip-1](https://user-images.githubusercontent.com/85739956/131316750-70304094-0c7a-4f4d-b5c4-9a5ffb00c022.png)
 
+### Features
+- Windows Version <br/>
+- Internal IP <br/>
+- Ping <br/>
+- CPU Temperature (OpenHardwareMonitor Lib) <br/>
+- GPU Temperature (OpenHardwareMonitor Lib) <br/>
+- CPU Usage <br/>
+- RAM Usage <br/>
+- Download Speed Usage <br/>
+- Upload Speed Usage <br/>
+- Sends Logs to webserver (free webhosts are fine, no need of MySQL or SQLite) <br/>
+- Sends Telegram Alerts <br/>
+- Local CSV log file <br/>
+- Online JavaScript Chart for history view (UNDER DEVELOPMENT) 
+
 
 
 
