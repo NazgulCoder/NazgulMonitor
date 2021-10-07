@@ -38,6 +38,8 @@ Live view from Website (1sec delay only), errors reportage, graph with history
 
 ![Senza titolo](https://user-images.githubusercontent.com/85739956/136430996-073dd5b6-e13e-46c8-b89a-69566e4095fc.png)
 
+![image](https://i.gyazo.com/e57d3b9ca993c63ca605135c75707747.gif)
+
 ### Credits
 Me <br/>
 OSK Soft for the big help simplifying the OpenHardwareMonitor lib usage and many other bug fixes <br/>
