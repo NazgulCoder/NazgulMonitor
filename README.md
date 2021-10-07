@@ -38,8 +38,12 @@ Live view from Website (1sec delay only), errors reportage, graph with history
 
 ![Senza titolo](https://user-images.githubusercontent.com/85739956/136430996-073dd5b6-e13e-46c8-b89a-69566e4095fc.png)
 
+### Credits
+Me <br/>
+OSK Soft for the big help simplifying the OpenHardwareMonitor lib usage and many other bug fixes <br/>
+<a href="https://github.com/FrancescoBonizzi">Francesco Bonizzi</a> for general troubleshooting and fixing the WebRequest function <br/>
+<a href="https://github.com/Steffen7792">Steffen7792</a> for helping me out with the JavaScript functions and charts <br/>
 
-
-
-
+<a href="https://github.com/openhardwaremonitor/openhardwaremonitor">OpenHardwareMonitor</a> for the driver to read CPU and GPU Temperatures <br/>
+<a href="https://dygraphs.com/">dygraphs</a> for their charts implementation <br/>
 
