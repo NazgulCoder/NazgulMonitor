@@ -22,7 +22,13 @@ Inspired by the most known monitoring softwares like PRTG, HetrixTools, Zabbix, 
 - Sends Logs to webserver (free webhosts are fine, no need of MySQL or SQLite) <br/>
 - Sends Telegram Alerts <br/>
 - Local CSV log file <br/>
-- Online JavaScript Chart for history view (UNDER DEVELOPMENT) 
+- Online JavaScript Chart for history view <br/>
+
+### Previews
+Very simple showcase of the JS Chart showing GPU peaks when gaming
+
+![tempsnip](https://user-images.githubusercontent.com/85739956/136430502-9273e504-1cf8-446f-a88d-b3968fbbcb0a.png)
+
 
 
 
