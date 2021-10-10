@@ -1,0 +1,162 @@
+<html>
+  
+<script src="dygraph.min.js"></script>    
+
+<link rel="stylesheet" href="dygraph.css">
+
+<style>
+body {
+  padding: 25px;
+  background-color: #282828;
+  color: white;
+  font-size: 25px;
+  
+  display: table-cell;
+  vertical-align: middle; /* for centering  */
+  
+  background-image: url('background.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+html, body {
+    height: 100%;
+}
+
+html {
+    display: table;
+    margin: auto;
+}
+
+h1 { font-size: 250%; }
+textarea { resize: none; }
+textarealogs { resize: none; }
+
+.highcharts-figure, .highcharts-data-table table {
+    min-width: 360px; 
+    max-width: 800px;
+    margin: 1em auto;
+}
+
+.highcharts-data-table table {
+	font-family: Verdana, sans-serif;
+	border-collapse: collapse;
+	border: 1px solid #EBEBEB;
+	margin: 10px auto;
+	text-align: center;
+	width: 100%;
+	max-width: 500px;
+}
+.highcharts-data-table caption {
+    padding: 1em 0;
+    font-size: 1.2em;
+    color: #555;
+}
+.highcharts-data-table th {
+	font-weight: 600;
+    padding: 0.5em;
+}
+.highcharts-data-table td, .highcharts-data-table th, .highcharts-data-table caption {
+    padding: 0.5em;
+}
+.highcharts-data-table thead tr, .highcharts-data-table tr:nth-child(even) {
+    background: #f8f8f8;
+}
+.highcharts-data-table tr:hover {
+    background: #f1f7ff;
+}
+
+</style>
+
+
+<body>
+    <center><h1>Nazgul Monitor</h1></center>
+    <table style="width:40%">
+        <tr>
+    <th>Information</th>
+    <th>Logs</th>
+  </tr>
+  <tr>
+    <td><textarea  id="textarea" rows="15" cols="35" readonly autocomplete="off" style="background-color: #282828; color: white">
+</textarea></td>
+    <td><textarea  id="textarealogs" rows="15" cols="50" readonly autocomplete="off" style="background-color: #282828; color: white">
+</textarea>
+    </td>
+  </tr>
+  <tr>
+    <td><form action="info.txt" target="_blank" method="post">
+        <input type="submit" value="Copy Info">
+        </form></td>
+    <td>
+        <form action="clearlogs.php" method="post">
+        <input type="submit" value="Clear Logs">
+        </form>
+        </td>
+  </tr>
+  </table>
+
+<div id="DIVgraph" style="width:100%; height:300px; background-color: #cccccc; color: black;"></div>
+  
+
+<script>
+    function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", "info.txt?t=" + Date.now(), false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                 document.getElementById("textarea").value = allText;
+            }
+        }
+    }
+    rawFile.send(null);
+}
+    setInterval(readTextFile, 1000);
+
+</script>
+<script>
+    function readTextFile(file)
+{
+    var rawFile = new XMLHttpRequest();
+    rawFile.open("GET", "logs.txt?t=" + Date.now(), false);
+    rawFile.onreadystatechange = function ()
+    {
+        if(rawFile.readyState === 4)
+        {
+            if(rawFile.status === 200 || rawFile.status == 0)
+            {
+                var allText = rawFile.responseText;
+                 document.getElementById("textarealogs").value = allText;
+                 document.getElementById("textarealogs").scrollTop = document.getElementById("textarealogs").scrollHeight 
+            }
+        }
+    }
+    rawFile.send(null);
+}
+    setInterval(readTextFile, 1000);
+
+</script>
+
+<script>
+  g2 = new Dygraph(
+    document.getElementById("DIVgraph"),
+    "charts.csv", 
+    {
+	  title: 'History View Graph',
+	  ylabel: 'Values',
+	}      
+  );
+</script>
+
+
+<br>
+
+
+</body>
+</html>
