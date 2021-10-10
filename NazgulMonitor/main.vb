@@ -39,7 +39,6 @@ Public Class main
             "Attention!", MessageBoxButtons.YesNo)
 
         If dlgR = DialogResult.Yes Then
-            removeNotifyIcon()
             Process.GetCurrentProcess.Kill()
         Else
             e.Cancel = True
@@ -144,8 +143,6 @@ Public Class main
             getLog("Error while releasing memory")
         End Try
 
-        removeNotifyIcon()
-
         'sets again the boolean true for the telegram warnings (once every 60 sec)
         If sendTelegramWarnings = False Then
             sendTelegramWarnings = True
@@ -156,8 +153,8 @@ Public Class main
         If twoTimer.Enabled = True And WebserverCheckBox.Checked = True Then
             Try
                 Using client As HttpClient = New HttpClient
-                    Dim uri As New Uri(WebserverTextBox.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(PingLabel.Text) & "~" & Num(CPUTempLabel.Text) &
-                                   "~" & Num(GPUTempLabel.Text) & "~" & Num(CPUUsageLabel.Text) & "~" & Num(RAMUsageLabel.Text))
+                    Dim uri As New Uri(WebserverTextBox.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("yyyy/MM/dd HH:mm")) & "," & Num(CPUTempLabel.Text) &
+                                       "," & Num(GPUTempLabel.Text) & "," & Num(CPUUsageLabel.Text) & "," & Num(RAMUsageLabel.Text) & "," & Num(PingLabel.Text))
                     Using response As HttpResponseMessage = Await client.GetAsync(uri)
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()
@@ -181,25 +178,13 @@ Public Class main
             End Try
         End If
     End Sub
-    Private Sub removeNotifyIcon()
-        If Not Me.NotifyIcon1 Is Nothing Then
-            Me.NotifyIcon1.Visible = False
-            Me.NotifyIcon1.Dispose()
-            Me.NotifyIcon1 = Nothing
-        End If
-    End Sub
     Private Sub checkIfAutorun()
-        NotifyIcon1.Text = "NazgulMonitor"
         Try
             If Environment.GetCommandLineArgs(1).ToString = "--NazgulMonitorAutorun" Then
                 StartButton()
 
             ElseIf Environment.GetCommandLineArgs(1).ToString = "--NazgulMonitorAutorunMinimized" Then
                 Me.WindowState = FormWindowState.Minimized
-                NotifyIcon1.BalloonTipIcon = ToolTipIcon.Info
-                'NotifyIcon1.BalloonTipText = "Welcome to TutorialsPanel.com!!"
-                'NotifyIcon1.BalloonTipTitle = "Welcome Message"
-                'NotifyIcon1.ShowBalloonTip(2000)
                 StartButton()
             Else
                 getLog("Something went wrong while autorun")
@@ -229,7 +214,6 @@ Public Class main
             threeTimer.Enabled = False
             P.Start()
             Thread.Sleep(2000)
-            removeNotifyIcon()
             Process.GetCurrentProcess.Kill()
         End If
 
@@ -451,9 +435,6 @@ Public Class main
         saveConfig()
     End Sub
 
-    Private Sub NotifyIcon1_MouseDoubleClick(sender As Object, e As MouseEventArgs) Handles NotifyIcon1.MouseDoubleClick
-        Me.WindowState = FormWindowState.Normal
-    End Sub
 
     Private Sub TopMostCheckBox_CheckedChanged(sender As Object, e As EventArgs) Handles TopMostCheckBox.CheckedChanged
         If TopMostCheckBox.Checked = True Then

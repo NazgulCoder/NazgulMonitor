@@ -143,9 +143,10 @@ Public Class Form1
         'sends every 60 sec the info to the charts csv
         If twoTimer.Enabled = True And WebserverCheckBox.Checked = True Then
             Try
+                '2009/07/12 12:33,62,39,90,50,122
                 Using client As HttpClient = New HttpClient
-                    Dim uri As New Uri(WebserverTextBox.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("dd/MM/yyyy*HH/mm/ss")) & "~" & Num(PingLabel.Text) & "~" & Num(CPUTempLabel.Text) &
-                                   "~" & Num(GPUTempLabel.Text) & "~" & Num(CPUUsageLabel.Text) & "~" & Num(RAMUsageLabel.Text))
+                    Dim uri As New Uri(WebserverTextBox.Text & "api-charts.php?Info=" & (DateTime.Now.ToString("yyyy/MM/dd HH:mm")) & "," & Num(CPUTempLabel.Text) &
+                                       "~" & Num(GPUTempLabel.Text) & "~" & Num(CPUUsageLabel.Text) & "~" & Num(RAMUsageLabel.Text) & "~" & Num(PingLabel.Text))
                     Using response As HttpResponseMessage = Await client.GetAsync(uri)
                         Using content As HttpContent = response.Content
                             Dim result As String = Await content.ReadAsStringAsync()

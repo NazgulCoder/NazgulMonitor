@@ -22,7 +22,6 @@ Partial Class main
     'Non modificarla mediante l'editor del codice.
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
-        Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(main))
         Me.WinVersionLabel = New System.Windows.Forms.Label()
         Me.IntIPLabel = New System.Windows.Forms.Label()
@@ -60,7 +59,6 @@ Partial Class main
         Me.afterMinutesLabel = New System.Windows.Forms.Label()
         Me.secondsLabel = New System.Windows.Forms.Label()
         Me.refreshLabel = New System.Windows.Forms.Label()
-        Me.NotifyIcon1 = New System.Windows.Forms.NotifyIcon(Me.components)
         CType(Me.SeparatorImage, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.SendLogsTrackbar, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.RefreshEveryUpDownNumeric, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -437,12 +435,6 @@ Partial Class main
         Me.refreshLabel.TabIndex = 43
         Me.refreshLabel.Text = "Refresh every"
         '
-        'NotifyIcon1
-        '
-        Me.NotifyIcon1.Icon = CType(resources.GetObject("NotifyIcon1.Icon"), System.Drawing.Icon)
-        Me.NotifyIcon1.Text = "NazgulMonitor"
-        Me.NotifyIcon1.Visible = True
-        '
         'main
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -533,5 +525,4 @@ Partial Class main
     Friend WithEvents afterMinutesLabel As Label
     Friend WithEvents secondsLabel As Label
     Friend WithEvents refreshLabel As Label
-    Friend WithEvents NotifyIcon1 As NotifyIcon
 End Class

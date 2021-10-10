@@ -2,7 +2,7 @@
     Public Sub ReleaseMemory()
         GC.Collect()
         GC.WaitForPendingFinalizers()
-        GC.SuppressFinalize(Form1)
+        GC.SuppressFinalize(main)
         If Environment.OSVersion.Platform = PlatformID.Win32NT Then
             SetProcessWorkingSetSize(System.Diagnostics.Process.GetCurrentProcess().Handle, -1, -1)
         End If
